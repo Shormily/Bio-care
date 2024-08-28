@@ -73,7 +73,7 @@ const Footer = () => {
               </div>
             </div>
             <div className="text-white">
-              <p className="font-semibold mb-2 text-[22px]">Let's talk about health!</p>
+              <p className="font-semibold mb-2 text-[22px]">Payment</p>
               <div
                 style={{
                   justifyContent: "center",
