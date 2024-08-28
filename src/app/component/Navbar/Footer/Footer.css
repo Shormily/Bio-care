@@ -1,0 +1,20 @@
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css');
+
+.icn {
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    /* background-color: rgb(46, 43, 40); */
+    margin: 0 10px 10px 0;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    font-size: 20px;
+    color: #f0f2fa;
+    transition: all 0.5s ease;
+}
+.icn:hover {
+    color: #f0f2fa;
+    background-color: #0b0707;
+    /* background: linear-gradient(97deg, rgb(19, 1, 27) 0%, rgb(18, 9, 15) 72%, rgb(13, 6, 7) 98%); */
+}
