@@ -56,7 +56,7 @@ export default function Drawer() {
       {/* Main Content */}
       <div className="p-6 flex-grow">
         <h1 className="text-2xl">Main Content Area</h1>
-        <p>This is the main content area.</p>
+        <p>This is the main content area and write some thing.</p>
       </div>
     </div>
   );
