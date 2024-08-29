@@ -121,7 +121,7 @@ const Navbar = () => {
 
 
 
-      <nav className="flex   justify-between items-center max-container padding-container relative z-10  max-w-[1550px] m-auto ">
+      <nav className="flex  justify-between items-center max-container padding-container relative   max-w-[1550px] m-auto ">
         <Link href="/" className='text-white flex gap-2 justify-center items-center m-auto '>
        <Image
                   src='/asset/logo.png'
