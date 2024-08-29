@@ -52,7 +52,7 @@ export default function Drawer({ isOpen, onClose }) {
             <h3 className="text-md font-semibold mb-2">Categories</h3>
             <ul className="space-y-2">
               <li><a href="#" className="hover:text-blue-500">OTC Medicine</a></li>
-              <li><a href="#" className="hover:text-blue-500">Women's Choice</a></li>
+              <li><a href="#" className="hover:text-blue-500">Womens Choice</a></li>
               <li><a href="#" className="hover:text-blue-500">Sexual Wellness</a></li>
               <li><a href="#" className="hover:text-blue-500">Diabetic Care</a></li>
               <li><a href="#" className="hover:text-blue-500">Baby Care</a></li>
