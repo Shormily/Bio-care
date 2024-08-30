@@ -9,6 +9,8 @@ import { FaBars } from "react-icons/fa";
 import "./globals.css"
 import Link from 'next/link';
 import Image from 'next/image';
+import { RiMenu2Line } from 'react-icons/ri';
+
 
 const Navbar = () => {
   // const [placeholder, setPlaceholder] = useState('');
@@ -121,14 +123,14 @@ const Navbar = () => {
 
 
 
-      <nav className="flex  justify-between items-center max-container padding-container relative   max-w-[1550px] m-auto ">
-        <Link href="/" className='text-white flex gap-2 justify-center items-center m-auto '>
+      <nav className="flex  justify-between items-center max-container padding-container relative   max-w-[1550px] m-auto px-4">
+        <Link href="/" className='text-white flex gap-2 justify-center items-center m-auto pl-2'>
        <Image
                   src='/asset/logo.png'
                   width={50}
                   height={50}
                   alt="error image"
-                  className="py-2"
+                  className="py-2 "
                 />  <p className='text-bold text-2xl'>BioCare</p> 
          
         </Link>
@@ -177,7 +179,7 @@ const Navbar = () => {
 
         {/* Mobile Menu Button */}
         <button className="lg:hidden text-white p-2" onClick={toggleMobileMenu}>
-          <FaBars size={24} />
+          <RiMenu2Line size={24} />
         </button>
 
         {/* Mobile Menu */}
