@@ -2,12 +2,17 @@ import Image from 'next/image';
 
 export default function ProductCard({ product }) {
   return (
-    <div className="w-64 rounded-lg shadow-lg overflow-hidden bg-gray-100 mb-12 border border-gray-200">
-      <div className="relative ">
-        <Image src={product.image} alt={product.name} width={400} height={400} className="object-cover p-3 rounded-3xl   w-full h-48" />
+    <div className="w-64 rounded-lg shadow-lg  bg-gray-100 mb-12 border border-gray-200">
+      {/* <div className="relative ">
+        <Image src={product.image} alt={product.name} width={400} height={400} className=" p-3 rounded-3xl   w-full h-48" />
         <div className="absolute top-0 left-0 bg-red-500 text-white text-xs font-bold rounded-br-lg py-1 px-3">
           10% Off
         </div>
+      </div> */}
+      <div className="">
+     
+        <Image src={product.image} alt={product.name} width={400} height={400} className=" p-3 rounded-3xl   w-full h-48" />
+       
       </div>
       <div className="p-4">
         <h2 className="text-lg font-semibold">{product.name}</h2>

@@ -11,6 +11,11 @@ import 'swiper/css/scrollbar';
 import Banner from '../Banner/Banner';
 import ProductCard from '../ProductCard/ProductCard';
 
+
+
+
+
+
 export default function Drawer() {
   const menuItems = [
     { href: '/', icon: <FaCapsules />, label: 'OTC Medicine', className: "text-blue-600 ml-2 " },
@@ -96,11 +101,11 @@ export default function Drawer() {
       <div className="p-6  md:w-full sm:w-full lg:w-[84%]">
         <h1 className="text-2xl">Main Content Area</h1>
         <div className="container mx-auto px-4 py-8">
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+      {/* <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
         {products.map((product, index) => (
           <ProductCard key={index} product={product} />
         ))}
-      </div>
+      </div> */}
     </div>
         <Banner/>
       </div>
