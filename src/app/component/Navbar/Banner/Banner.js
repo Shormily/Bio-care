@@ -1,4 +1,4 @@
-import Box from "../Box/Box";
+// import Box from "../Box/Box";
 
 const Banner = () => {
   const products = [
@@ -74,7 +74,7 @@ const Banner = () => {
     <>
     
         
-     <Box/>
+     {/* <Box/> */}
 
       <div className="px-4 mt-8">
         <h1 className="text-2xl font-semibold">
