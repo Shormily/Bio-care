@@ -1,4 +1,4 @@
-// import Box from "../Box/Box";
+import Box from "../Box/Box";
 
 const Banner = () => {
   const products = [
@@ -74,23 +74,23 @@ const Banner = () => {
     <>
     
         
-     {/* <Box/> */}
+     <Box/>
 
       <div className="px-4 mt-8">
         <h1 className="text-2xl font-semibold">
           Best Online Pharmacy And Health Care Platform in Bangladesh
         </h1>
         <p className="text-[#71717a] text-justify mt-4">
-          Bangladesh is a developing nation with more than 180 million people. With the advent of technology, Bangladesh's health care sector has shown tremendous expansion in the past few years. As a result, several online pharmacies and health care platforms have been developed to provide affordable access to quality healthcare services.
+          Bangladesh is a developing nation with more than 180 million people. With the advent of technology, Bangladesh health care sector has shown tremendous expansion in the past few years. As a result, several online pharmacies and health care platforms have been developed to provide affordable access to quality healthcare services.
           <br />
           <br />
           The <span className="font-bold text-black">best online pharmacy and health care platform in</span> is <span className="font-bold text-black">BioCare Bangladesh</span>. It is an online medicine platform that provides access to various health care services. MedEasy is a one-stop destination for all healthcare needs. It offers various services such as medicine delivery, doctor consultations, lab tests, and more. The platform also provides access to health records, medical advice and support, and a comprehensive database of health care providers in Bangladesh.
           <br />
           <br />
-          <span>BioCare</span> is Bangladesh's most trusted and reliable <span className="font-bold text-black">online pharmacy and healthcare platform.</span> The secure and user-friendly platform makes it easy to access the services provided. MedEasy also offers discounts and deals to help make health care services more affordable. The platform provides 24/7 customer service and support to ensure customers get the best possible experience.
+          <span>BioCare</span> is Bangladesh most trusted and reliable <span className="font-bold text-black">online pharmacy and healthcare platform.</span> The secure and user-friendly platform makes it easy to access the services provided. BioCare also offers discounts and deals to help make health care services more affordable. The platform provides 24/7 customer service and support to ensure customers get the best possible experience.
           <br />
           <br />
-          Overall, MedEasy is the <span className="font-bold text-black">best online pharmacy and healthcare platform in Bangladesh.</span> It provides affordable access to quality health care services and offers the best customer support. MedEasy is the best choice for anyone looking for quality health care services in Bangladesh.
+          Overall, BioCare is the <span className="font-bold text-black">best online pharmacy and healthcare platform in Bangladesh.</span> It provides affordable access to quality health care services and offers the best customer support. BioCare is the best choice for anyone looking for quality health care services in Bangladesh.
         </p>
 
         <p className="text-2xl font-semibold mt-8">Best Selling Medicines</p>
