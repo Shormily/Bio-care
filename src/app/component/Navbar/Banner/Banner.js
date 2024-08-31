@@ -73,7 +73,6 @@ const Banner = () => {
   return (
     <>
     
-        
      <Box/>
 
       <div className="px-4 mt-8">
