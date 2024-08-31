@@ -10,7 +10,7 @@ const Footer = () => {
       {/* <JoinOur/> */}
       {/* Footer Section */}
 
-      <div className="bg-[#023020] justify-center items-center m-auto flex  font-inriaSans pt-12 pb-8 ">
+      <div className="bg-[#023020]   justify-center items-center m-auto flex  font-inriaSans pt-12 pb-8 ">
         <div
           className="max-w-[1550px] justify-center items-center m-auto px-6  pt-12 pb-8
       "
