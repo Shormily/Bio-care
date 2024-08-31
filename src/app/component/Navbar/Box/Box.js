@@ -9,8 +9,8 @@ import Image from 'next/image';
 
 const Box = () => {
     return (
-        <div className='items-center justify-center m-auto'>
-            <div className="justify-center items-center   bg-[#fef3c7]  m-4 mt-2 rounded-lg">
+        <div className='items-center justify-center m-auto py-4'>
+            <div className="justify-center items-center   bg-[#e2f8e9]  m-4 mt-2 rounded-lg">
                 <div
                     className="grid lg:grid-cols-2 md:grid-cols-1 sm:grid-cols-1  justify-center items-center m-auto px-2"
                 >
@@ -21,7 +21,7 @@ const Box = () => {
                         >
                             <p className="text-transparent  bg-clip-text bg-gradient-to-r from-emerald-950 to-lime-800">
                                 {" "}
-                                <span className='text-[40px]'>Dr. Mohiuzzaman Saikat </span>
+                                <span className='text-[40px] '>Dr. Mohiuzzaman Saikat </span>
                             </p>
                         </div>
                         <p className="text-white ">
