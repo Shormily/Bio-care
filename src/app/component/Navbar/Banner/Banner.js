@@ -143,7 +143,7 @@ const Banner = () => {
                    
                 </div>
                     </div>
-      <div className="px-4 mt-8">
+      <div className="px-4 mt-8 pb-16">
         <h1 className="text-2xl font-semibold">
           Best Online Pharmacy And Health Care Platform in Bangladesh
         </h1>
