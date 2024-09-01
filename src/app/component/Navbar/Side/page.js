@@ -68,7 +68,7 @@ export default function Drawer() {
   return (
     <div className="flex ">
       {/* Sidebar */}
-      <div className=' lg:w-[16%]'>
+      <div className=' lg:min-w-[16%]'>
         <div className='hidden lg:block   bg-[#f0fdf4] overflow-auto scroll-y-auto rounded-lg m-4 p-3  h-[40rem] scroll-mr-6 '>
       {/* mx-auto w-64 h-[40rem] overflow-auto scroll-auto */}
         <Swiper

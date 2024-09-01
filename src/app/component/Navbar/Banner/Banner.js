@@ -1,4 +1,6 @@
+import Image from "next/image";
 import Box from "../Box/Box";
+import { TypeAnimation } from "react-type-animation";
 
 const Banner = () => {
   const products = [
@@ -71,10 +73,76 @@ const Banner = () => {
 
 
   return (
-    <>
+    <div className="bg-gray-100">
     
      <Box/>
-
+     <div className="justify-center items-center p-5    mt-2 rounded-lg">
+                <div className="grid lg:grid-cols-2 md:grid-cols-1 sm:grid-cols-1 justify-center items-center m-auto px-2">
+                <div className='flex flex-row gap-5 py-3 justify-center items-center m-auto'>
+                        <div>
+                            <Image
+                                src='/asset/sai.jpg'
+                                width={200}
+                                height={200}
+                                alt="error image"
+                                className="mb-4 p-1 bg-white"
+                            />
+                            <Image
+                                src='/asset/saik.jpg'
+                                width={200}
+                                height={200}
+                                alt="error image"
+                                className="mb-4 p-1 bg-white"
+                            />
+                        </div>
+                        <div>
+                            <Image
+                                src='/asset/saik.jpg'
+                                width={200}
+                                height={250}
+                                alt="error image"
+                                className="mb-4 p-1 bg-white"
+                            />
+                            <Image
+                                src='/asset/sa.jpg'
+                                width={200}
+                                height={200}
+                                alt="error image"
+                                className="mb-4 p-1 bg-white"
+                            />
+                        </div>
+                    </div>
+          <div className="flex flex-col gap-5 md:text-start xs:text-center px-4 ">
+            <div className="gap-6 font-bold bg-clip-text bg-gradient-to-r from-emerald-950 to-lime-500 w-auto h-auto">
+            <p className="text-transparent bg-clip-text py-4 bg-gradient-to-r from-emerald-950 to-lime-300">
+                                <span className='text-5xl italic '>About US</span>
+                            </p>
+                          
+              <p className="text-transparent bg-clip-text bg-gradient-to-r from-emerald-950 to-lime-800">
+                                <span className='text-[40px]  '>Dr. Mohiuzzaman Saikat</span>
+                            </p>
+                        </div>
+                        <p className="text-white">
+                            <span className="text-danger">
+                                <TypeAnimation
+                                    sequence={[
+                                        "> Hi, I am MBBS Doctor",
+                                        1000,
+                                        "> This is my HealthCare Website",
+                                        1000,
+                                        "",
+                                    ]}
+                                    wrapper="span"
+                                    speed={50}
+                                    repeat={Infinity}
+                                    className="font-semibold text-transparent herotext bg-clip-text bg-gradient-to-r from-emerald-950 to-lime-800"
+                                />
+                            </span>
+                        </p>
+                    </div>
+                   
+                </div>
+                    </div>
       <div className="px-4 mt-8">
         <h1 className="text-2xl font-semibold">
           Best Online Pharmacy And Health Care Platform in Bangladesh
@@ -91,6 +159,7 @@ const Banner = () => {
           <br />
           Overall, BioCare is the <span className="font-bold text-black">best online pharmacy and healthcare platform in Bangladesh.</span> It provides affordable access to quality health care services and offers the best customer support. BioCare is the best choice for anyone looking for quality health care services in Bangladesh.
         </p>
+       
 
         <p className="text-2xl font-semibold mt-8">Best Selling Medicines</p>
         <p className="text-[#3f6212] font-semibold hover:cursor-pointer hover:text-red-500 py-3 text-justify">
@@ -120,7 +189,7 @@ const Banner = () => {
           9. Access to reliable information on health and wellness.
         </p>
       </div>
-    </>
+    </div>
   );
 };
 
