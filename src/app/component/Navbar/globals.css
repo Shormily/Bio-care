@@ -19,29 +19,42 @@
   }
 
 
-  /*  <div className="flex flex-col gap-5 text-start justify-center items-center m-auto">
-                        <div className="flex flex-col gap-6 font-bold bg-clip-text bg-gradient-to-r from-emerald-950 to-lime-500 w-auto h-auto">
-                            <p className="text-transparent bg-clip-text bg-gradient-to-r from-emerald-950 to-lime-800">
-                                <span className='text-[40px] '>Dr. Mohiuzzaman Saikat</span>
-                            </p>
-                        </div>
-                        <p className="text-white">
-                            <span className="text-danger">
-                                <TypeAnimation
-                                    sequence={[
-                                        "> Hi, I am MBBS Doctor",
-                                        1000,
-                                        "> This is my HealthCare Website",
-                                        1000,
-                                        "",
-                                    ]}
-                                    wrapper="span"
-                                    speed={50}
-                                    repeat={Infinity}
-                                    className="font-semibold text-transparent herotext bg-clip-text bg-gradient-to-r from-emerald-950 to-lime-800"
-                                />
-                            </span>
-                        </p>
-                    </div> */
+  .flex-container {
+    display: flex;
+    flex-direction: row;
+  }
+   /* Responsive layout - makes a one column layout instead of a two-column layout */
+   
+   @media (max-width: 1440px) {
+     .flex-container {
+      flex-direction: row;
+      grid-template-columns: repeat(2,1fr);
+     }
+   }
+   @media (max-width: 800px) {
+     .flex-container {
+       flex-direction: column;
+     }
+   }
+   @media (max-width: 700px) {
+     .flex-container {
+       flex-direction: column;
+     }
+   }
+   @media (max-width: 600px) {
+     .flex-container {
+       flex-direction: column;
+     }
+   }
+   @media (max-width: 500px) {
+     .flex-container {
+       flex-direction: column;
+     }
+   }
+   @media (max-width: 400px) {
+     .flex-container {
+       flex-direction: column;
+     }
+   }
 
 

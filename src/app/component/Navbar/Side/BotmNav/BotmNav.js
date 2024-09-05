@@ -15,8 +15,8 @@ export default function BottomNav() {
 
   return (
     <>
-      <div className="fixed bottom-0 inset-x-0 bg-white shadow-lg p-2 flex justify-around items-center ">
-        <button className="lg:hidden text-[#000] p-2" onClick={toggleDrawer}>
+      <div className="fixed bottom-0 inset-x-0 bg-white shadow-lg p-2 flex justify-around items-center z-20">
+        <button className="lg:hidden text-[#000] p-2 z-20" onClick={toggleDrawer}>
            <RiMenu2Line size={24}/> 
         </button>
         <button className="lg:hidden text-[#000] p-2">
