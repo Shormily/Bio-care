@@ -146,10 +146,10 @@ export default function Drawer() {
     >
       {/* Sidebar */}
       <div
-        className="lg:max-w-[16%]  hidden lg:block "
+        className="lg:w-[16%]   hidden lg:block "
         // className='col-span-1'
       >
-        <div className="  bg-[#f0fdf4] overflow-auto scroll-y-auto rounded-lg m-4 p-3   h-[40rem] scroll-mr-6 ">
+        <div className="bg-[#f0fdf4]   overflow-auto scroll-y-auto rounded-lg m-4 p-3   h-[40rem] scroll-mr-6 ">
           {/* mx-auto w-64 h-[40rem] overflow-auto scroll-auto */}
           <Swiper
             // direction={"vertical"}
@@ -167,11 +167,16 @@ export default function Drawer() {
                     <a
                       className={`flex items-center hover:bg-[#ecfccb] rounded-md  ${item.className}`}
                     >
-                      <span className="text-[20px] m-1  ">{item.icon}</span>
-                      <span className="pl-2 text-[#000]">{item.label}</span>
+                     
+                        
+                        <span className="text-[20px] m-1 inline-block ">{item.icon}</span>
+                      <span className="pl-2 text-[#000] inline-block">{item.label}</span>
                       <span className="ml-auto">
                         <RiArrowRightSLine size={25} />
-                      </span>
+                        </span>
+                      
+                      
+                     
                     </a>
                   </Link>
                 ))}
@@ -183,7 +188,7 @@ export default function Drawer() {
 
       {/* Main Content */}
       <div
-        className="lg:w-[84%] w-full mt-4 pr-5 pl-4"
+        className="lg:max-w-[84%] w-full mt-4 pr-5 pl-4"
         // className='col-span-2'
       >
         {/* Swiper start */}

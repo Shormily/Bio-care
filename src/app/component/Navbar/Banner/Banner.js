@@ -78,8 +78,11 @@ const Banner = () => {
      <Box/>
      <div className="justify-center items-center p-5    mt-2 rounded-lg">
                 <div className="grid lg:grid-cols-2 md:grid-cols-1 sm:grid-cols-1 justify-center items-center m-auto px-2">
-                <div className='flex flex-row gap-5 py-3 justify-center items-center m-auto'>
-                        <div>
+          <div
+            className=' py-3 justify-center items-center m-auto'
+            // flex flex-row gap-5
+          >
+                        {/* <div>
                             <Image
                                 src='/asset/sai.jpg'
                                 width={200}
@@ -94,22 +97,22 @@ const Banner = () => {
                                 alt="error image"
                                 className="mb-4 p-1 bg-white"
                             />
-                        </div>
+                        </div> */}
                         <div>
                             <Image
-                                src='/asset/saik.jpg'
-                                width={200}
-                                height={250}
+                                src='/asset/dr.png'
+                                width={400}
+                                height={400}
                                 alt="error image"
                                 className="mb-4 p-1 bg-white"
                             />
-                            <Image
+                            {/* <Image
                                 src='/asset/sa.jpg'
                                 width={200}
                                 height={200}
                                 alt="error image"
                                 className="mb-4 p-1 bg-white"
-                            />
+                            /> */}
                         </div>
                     </div>
           <div className="flex flex-col gap-5 md:text-start xs:text-center px-4 ">
@@ -119,7 +122,7 @@ const Banner = () => {
                             </p>
                           
               <p className="text-transparent bg-clip-text bg-gradient-to-r from-emerald-950 to-lime-800">
-                                <span className='text-[40px]  '>Dr. Mohiuzzaman Saikat</span>
+                                <span className='text-[40px]  '>Dr. Shormily Raisa</span>
                             </p>
                         </div>
                         <p className="text-white">
