@@ -183,7 +183,7 @@ export default function Drawer() {
 
       {/* Main Content */}
       <div
-        className="lg:w-[84%] w-full mt-4"
+        className="lg:w-[84%] w-full mt-4 pr-5 pl-4"
         // className='col-span-2'
       >
         {/* Swiper start */}
@@ -199,12 +199,12 @@ export default function Drawer() {
               disableOnInteraction: false,
             }}
           
-          className="rounded-xl"
+          className="rounded-xl "
           
         >
           <SwiperSlide>
             {" "}
-            <div className="rounded-2xl w-full">
+            <div className="rounded-2xl w-full ">
               <Image
                 src="/asset/bio.png"
                 // layout="fill"

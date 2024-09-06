@@ -73,7 +73,7 @@ const Banner = () => {
 
 
   return (
-    <div className="bg-gray-100">
+    <div className="">
     
      <Box/>
      <div className="justify-center items-center p-5    mt-2 rounded-lg">
