@@ -140,7 +140,7 @@ export default function Drawer() {
   ];
 
   return (
-    <div className="flex space-x-2 lg:p-4">
+    <div className="flex space-x-2 m-4">
     {/* Sidebar */}
     <div className="lg:w-[21%] hidden lg:block">
       <div className="bg-[#f0fdf4] p-2 overflow-auto scroll-y-auto rounded-lg h-screen">
@@ -175,9 +175,9 @@ export default function Drawer() {
         </Swiper>
       </div>
     </div>
-
+  
     {/* Main Content */}
-    <div className="lg:max-w-[79%] w-full pr-2 mt-2">
+    <div className="lg:max-w-[79%] mx-8">
       {/* Swiper start */}
       <Swiper
         pagination={{
@@ -189,10 +189,10 @@ export default function Drawer() {
           delay: 2500,
           disableOnInteraction: false,
         }}
-        className="rounded-xl "
+        className="rounded-xl xs:mr-8"
       >
         <SwiperSlide>
-          <div className="rounded-2xl w-full">
+          <div className="rounded-2xl w-full p-3"> {/* Added padding here */}
             <Image
               src="/asset/bio.png"
               objectFit="cover"
@@ -203,9 +203,9 @@ export default function Drawer() {
             />
           </div>
         </SwiperSlide>
-
+  
         <SwiperSlide>
-          <div className="rounded-2xl w-full">
+          <div className="rounded-2xl w-full p-3"> {/* Added padding here */}
             <Image
               src="/asset/se.png"
               objectFit="cover"
@@ -216,9 +216,9 @@ export default function Drawer() {
             />
           </div>
         </SwiperSlide>
-
+  
         <SwiperSlide>
-          <div className="rounded-2xl w-full">
+          <div className="rounded-2xl w-full p-3"> {/* Added padding here */}
             <Image
               src="/asset/t.png"
               objectFit="cover"
@@ -230,11 +230,13 @@ export default function Drawer() {
           </div>
         </SwiperSlide>
       </Swiper>
-      {/* swiper end */}
-
+      {/* Swiper end */}
+  
       <Banner />
     </div>
   </div>
+  
+
   );
 }
 
