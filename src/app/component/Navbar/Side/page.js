@@ -140,123 +140,101 @@ export default function Drawer() {
   ];
 
   return (
-    <div
-      className="flex-container"
-      // className='grid grid-cols-3 gap-4'
-    >
-      {/* Sidebar */}
-      <div
-        className="lg:w-[16%]   hidden lg:block "
-        // className='col-span-1'
-      >
-        <div className="bg-[#f0fdf4]   overflow-auto scroll-y-auto rounded-lg m-4 p-3   h-[40rem] scroll-mr-6 ">
-          {/* mx-auto w-64 h-[40rem] overflow-auto scroll-auto */}
-          <Swiper
-            // direction={"vertical"}
-            slidesPerView={"auto"}
-            freeMode={true}
-            scrollbar={true}
-            mousewheel={true}
-          
-            className=" h-screen  mx-4"
-          >
-            <SwiperSlide>
-              <nav className="flex flex-col gap-4 space-y-2 mt-4">
-                {menuItems.map((item, index) => (
-                  <Link href={item.href} key={index} legacyBehavior>
-                    <a
-                      className={`flex items-center hover:bg-[#ecfccb] rounded-md  ${item.className}`}
-                    >
-                     
-                        
-                        <span className="text-[20px] m-1 inline-block ">{item.icon}</span>
-                      <span className="pl-2 text-[#000] inline-block">{item.label}</span>
-                      <span className="ml-auto">
-                        <RiArrowRightSLine size={25} />
-                        </span>
-                      
-                      
-                     
-                    </a>
-                  </Link>
-                ))}
-              </nav>
-            </SwiperSlide>
-          </Swiper>
-        </div>
-      </div>
-
-      {/* Main Content */}
-      <div
-        className="lg:max-w-[84%] w-full mt-4 pr-5 pl-4"
-        // className='col-span-2'
-      >
-        {/* Swiper start */}
-
+    <div className="flex space-x-2 lg:p-4">
+    {/* Sidebar */}
+    <div className="lg:w-[21%] hidden lg:block">
+      <div className="bg-[#f0fdf4] p-2 overflow-auto scroll-y-auto rounded-lg h-screen">
         <Swiper
-          pagination={{
-            dynamicBullets: true,
-            clickable: true,
-          }}
-          modules={[Pagination,Autoplay,]}
-          autoplay={{
-              delay: 2500,
-              disableOnInteraction: false,
-            }}
-          
-          className="rounded-xl "
-          
+          slidesPerView={"auto"}
+          freeMode={true}
+          scrollbar={true}
+          mousewheel={true}
+          className="h-screen mx-4"
         >
           <SwiperSlide>
-            {" "}
-            <div className="rounded-2xl w-full ">
-              <Image
-                src="/asset/bio.png"
-                // layout="fill"
-                objectFit="cover"
-                alt="error image"
-                height={2000}
-                width={2000}
-                // className="lg:h-[483px] md:h-96 sm:h-36 sm:w-24 md:w-full  rounded-lg"
-                className="w-full  xs:h-auto md:h-[520px]"
-              />
-            </div>{" "}
+            <nav className="flex flex-col gap-4 space-y-2 mt-4">
+              {menuItems.map((item, index) => (
+                <Link href={item.href} key={index} legacyBehavior>
+                  <a
+                    className={`flex items-center hover:bg-[#ecfccb] rounded-md ${item.className}`}
+                  >
+                    <span className="text-[20px] m-1 inline-block">
+                      {item.icon}
+                    </span>
+                    <span className="pl-2 text-[#000] inline-block whitespace-nowrap">
+                      {item.label}
+                    </span>
+                    <span className="ml-auto">
+                      <RiArrowRightSLine size={25} />
+                    </span>
+                  </a>
+                </Link>
+              ))}
+            </nav>
           </SwiperSlide>
-         
-          <SwiperSlide>  <div className="rounded-2xl w-full">
-              <Image
-                src="/asset/se.png"
-                // layout="fill"
-                objectFit="cover"
-                alt="error image"
-                height={1500}
-                width={1500}
-                // className="lg:h-[483px] md:h-96 sm:h-36 sm:w-24 md:w-full  rounded-lg"
-                className="w-full xs:h-auto md:h-[520px]"
-              />
-            </div></SwiperSlide>
-            <SwiperSlide>
-            {" "}
-            <div className="rounded-2xl w-full">
-              <Image
-                src="/asset/t.png"
-                // layout="fill"
-                objectFit="cover"
-                alt="error image"
-                height={1500}
-                width={1500}
-                // className="lg:h-[483px] md:h-96 sm:h-36 sm:w-24 md:w-full  rounded-lg"
-                className="w-full xs:h-auto md:h-[520px]"
-              />
-            </div>{" "}
-          </SwiperSlide>
-        
         </Swiper>
-        {/* swiper end */}
-
-        <Banner />
       </div>
     </div>
+
+    {/* Main Content */}
+    <div className="lg:max-w-[79%] w-full pr-2 mt-2">
+      {/* Swiper start */}
+      <Swiper
+        pagination={{
+          dynamicBullets: true,
+          clickable: true,
+        }}
+        modules={[Pagination, Autoplay]}
+        autoplay={{
+          delay: 2500,
+          disableOnInteraction: false,
+        }}
+        className="rounded-xl "
+      >
+        <SwiperSlide>
+          <div className="rounded-2xl w-full">
+            <Image
+              src="/asset/bio.png"
+              objectFit="cover"
+              alt="error image"
+              height={1500}
+              width={1500}
+              className="w-full xs:h-auto md:h-[520px]"
+            />
+          </div>
+        </SwiperSlide>
+
+        <SwiperSlide>
+          <div className="rounded-2xl w-full">
+            <Image
+              src="/asset/se.png"
+              objectFit="cover"
+              alt="error image"
+              height={1500}
+              width={1500}
+              className="w-full xs:h-auto md:h-[520px]"
+            />
+          </div>
+        </SwiperSlide>
+
+        <SwiperSlide>
+          <div className="rounded-2xl w-full">
+            <Image
+              src="/asset/t.png"
+              objectFit="cover"
+              alt="error image"
+              height={1500}
+              width={1500}
+              className="w-full xs:h-auto md:h-[520px]"
+            />
+          </div>
+        </SwiperSlide>
+      </Swiper>
+      {/* swiper end */}
+
+      <Banner />
+    </div>
+  </div>
   );
 }
 

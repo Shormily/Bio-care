@@ -109,7 +109,7 @@ const Footer = () => {
 
 
           <p className=" text-[18px] text-white  pt-6 text-center">
-            2024 All rights reserved. &copy; ©2024 BioCare Bangladesh
+            2024 All rights reserved. &copy;2024 BioCare Bangladesh
           </p>
 
         </div>
