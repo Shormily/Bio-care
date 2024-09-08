@@ -140,7 +140,8 @@ export default function Drawer() {
   ];
 
   return (
-    <div className="flex space-x-2 m-4">
+   
+    <div className="flex-container mt-4 space-x-2  mx-6">
     {/* Sidebar */}
     <div className="lg:w-[21%] hidden lg:block">
       <div className="bg-[#f0fdf4] p-2 overflow-auto scroll-y-auto rounded-lg h-screen">
@@ -175,9 +176,9 @@ export default function Drawer() {
         </Swiper>
       </div>
     </div>
-  
+
     {/* Main Content */}
-    <div className="lg:max-w-[79%] mx-8">
+    <div className="lg:max-w-[79%] w-full ">
       {/* Swiper start */}
       <Swiper
         pagination={{
@@ -189,23 +190,23 @@ export default function Drawer() {
           delay: 2500,
           disableOnInteraction: false,
         }}
-        className="rounded-xl xs:mr-8"
+        className="rounded-xl "
       >
         <SwiperSlide>
-          <div className="rounded-2xl w-full p-3"> {/* Added padding here */}
+          <div className="rounded-2xl w-full">
             <Image
               src="/asset/bio.png"
               objectFit="cover"
               alt="error image"
-              height={1500}
-              width={1500}
+              height={2000}
+              width={2000}
               className="w-full xs:h-auto md:h-[520px]"
             />
           </div>
         </SwiperSlide>
-  
+
         <SwiperSlide>
-          <div className="rounded-2xl w-full p-3"> {/* Added padding here */}
+          <div className="rounded-2xl w-full">
             <Image
               src="/asset/se.png"
               objectFit="cover"
@@ -216,9 +217,9 @@ export default function Drawer() {
             />
           </div>
         </SwiperSlide>
-  
+
         <SwiperSlide>
-          <div className="rounded-2xl w-full p-3"> {/* Added padding here */}
+          <div className="rounded-2xl w-full">
             <Image
               src="/asset/t.png"
               objectFit="cover"
@@ -230,8 +231,8 @@ export default function Drawer() {
           </div>
         </SwiperSlide>
       </Swiper>
-      {/* Swiper end */}
-  
+      {/* swiper end */}
+
       <Banner />
     </div>
   </div>
