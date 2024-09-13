@@ -1,4 +1,30 @@
-.swiper {
-    width: 100%;
-    height: 100%;
-  }
+.testimonials{
+  border-left:4px solid #044d33 ;
+  margin-top: 30px;
+  margin-bottom: 50px;
+  border-right:4px solid #1d5f48 ;
+}
+
+.bgc{
+  background-color: #f0fdf4;
+}
+.bgc1{
+  background-color: #f3e4e4;
+}
+.bgc2{
+  background-color: #cfcff6;
+}
+.bgtsc{
+  background-color: #f8f9fa;
+}
+.testimonials img{
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+  margin: 0 10px;
+}
+.user-details{
+  display: inline-block;
+  font-size: 15px;
+}
+
