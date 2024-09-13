@@ -24,11 +24,15 @@ const Box = () => {
 
   return (
     <>
-      <div className='items-center justify-center m-auto py-2'>
-  <div className='grid lg:grid-cols-4 md:grid-cols-2 sm:grid-cols-1 px-4 gap-5 mt-8'>
+      <div
+        className='items-center justify-center m-auto py-2'
+      >
+        <div
+          className='grid lg:grid-cols-4 md:grid-cols-2 sm:grid-cols-1 px-4 gap-5 mt-8'
+        >
     {/* Upload Prescription */}
-    <div className='bg-[#023020] rounded-lg p-3'>
-      <div className='text-white py-4 flex flex-col justify-center items-center text-center'>
+    <div className='bg-[#023020] rounded-lg p-3 h-[100px]'>
+      <div className='text-white py-1 flex flex-col justify-center items-center text-center'>
         <p className='px-2 pb-1'>
           <FcViewDetails size={30} />
         </p>
@@ -37,8 +41,8 @@ const Box = () => {
     </div>
 
     {/* Book Appointment */}
-    <div className='bg-[#023020] rounded-lg p-3'>
-      <div className='text-white py-4 flex flex-col justify-center items-center text-center'>
+    <div className='bg-[#023020] rounded-lg p-3 h-[100px]'>
+      <div className='text-white py-2 flex flex-col justify-center items-center text-center'>
         <p className='px-2 pb-1'>
           <FcContacts size={30} />
         </p>
@@ -47,8 +51,8 @@ const Box = () => {
     </div>
 
     {/* Doctor Consultation */}
-    <div className='bg-[#023020] rounded-lg p-3'>
-      <div className='text-white py-4 flex flex-col justify-center items-center text-center'>
+    <div className='bg-[#023020] rounded-lg p-3 h-[100px]'>
+      <div className='text-white py-1 flex flex-col justify-center items-center text-center'>
         <p className='px-2 pb-1'>
           <FcConferenceCall size={35} />
         </p>
@@ -57,8 +61,8 @@ const Box = () => {
     </div>
 
     {/* Call Now */}
-    <div className='bg-[#023020] rounded-lg p-3'>
-      <div className='text-white py-4 flex flex-col justify-center items-center text-center'>
+    <div className='bg-[#023020] rounded-lg p-3 h-[100px]'>
+      <div className='text-white py-1 flex flex-col justify-center items-center text-center'>
         <p className='px-2 pb-1'>
           <FcCallback size={30} />
         </p>

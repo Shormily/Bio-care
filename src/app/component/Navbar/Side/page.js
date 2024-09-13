@@ -27,11 +27,12 @@ import { Swiper, SwiperSlide } from "swiper/react";
 // Import Swiper styles
 import "swiper/css";
 import "swiper/css/pagination";
+import 'swiper/css/effect-fade';
 
 // import './styles.css';
 
 // import required modules
-import { Autoplay, Pagination } from "swiper/modules";
+import { Autoplay, Pagination,EffectFade, } from "swiper/modules";
 import Image from "next/image";
 // swiper end
 
@@ -141,7 +142,8 @@ export default function Drawer() {
 
   return (
    
-    <div className="flex-container mt-4 space-x-2  mx-6">
+    <div className="flex-container mt-4 space-x-2  mx-6
+    ">
     {/* Sidebar */}
     <div className="lg:w-[21%] hidden lg:block">
       <div className="bg-[#f0fdf4] p-2 overflow-auto scroll-y-auto rounded-lg h-screen">
@@ -184,8 +186,9 @@ export default function Drawer() {
         pagination={{
           dynamicBullets: true,
           clickable: true,
-        }}
-        modules={[Pagination, Autoplay]}
+          }}
+          effect={'fade'}
+        modules={[Pagination,EffectFade, Autoplay]}
         autoplay={{
           delay: 2500,
           disableOnInteraction: false,
