@@ -131,16 +131,18 @@ const Navbar = () => {
           <button className="hover:text-orange-500">
             <LuShoppingCart size={25} />
           </button>
-          <div className="relative">
+          <Link href="/login" className="group hover:text-orange-500">
             <button
               id="userButton"
-              className="hover:text-orange-500 flex items-center"
+              className=" flex gap-1 items-center"
               onClick={toggleUserMenu}
             >
-              <FaRegUser size={20} />
+              <FaRegUser size={20} /> LogIn  
             </button>
+           
             {/* Add your user menu dropdown here */}
-          </div>
+          </Link>
+         
         </div>
 
         {/* Mobile Menu Button */}
@@ -199,7 +201,7 @@ const Navbar = () => {
                 className="hover:text-orange-500 flex items-center"
                 onClick={toggleUserMenu}
               >
-                <FaRegUser size={20} />
+                <FaRegUser size={20} /> 
               </button>
               {/* Add your user menu dropdown here */}
             </div>

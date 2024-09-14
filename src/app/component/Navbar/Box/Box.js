@@ -378,12 +378,13 @@ const Box = () => {
                   <div className="col-span-5 col-start-2 p-5 border-l-4 border-green-800 mt-12 mb-12">
                     <p className="text-dark mb-2">
                     {Skill.pra}
-                    </p>
-                    <Image objectFit="cover" alt="error image" height={1500} width={1500} src={Skill.img} className="h-15 mb-3 w-15 rounded-full mx-2" />
-                    <p className="user-details text-dark">
-                        <b className='py-3'>{Skill.names}</b>
+                      </p>
+                      
+                    <Image objectFit="cover" alt="error image" height={1500} width={1500} src={Skill.img} className="h-15 mb-3 w-15 rounded-full mx-2 " />
+                    <p className="user-details text-dark ">
+                        <b className='my-3'>{Skill.names}</b>
                       <br />
-                      <span className="item-center justify-center flex text-yellow-400 pt-4 pb-1">
+                      <span className="item-center justify-center flex text-yellow-400  pb-1">
                   <IoStar size={25} />
                   <IoStar size={25} />
                   <IoStar size={25} />
@@ -400,7 +401,7 @@ const Box = () => {
                     <p className="user-details text-dark">
                         <b >{Skill.name}</b>
                       <br />
-                      <span className="item-center justify-center flex text-yellow-400 pt-4 pb-1">
+                      <span className="item-center justify-center flex text-yellow-400  pb-1">
                   <IoStar size={25} />
                   <IoStar size={25} />
                   <IoStar size={25} />

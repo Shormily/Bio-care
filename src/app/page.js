@@ -11,12 +11,12 @@ export default function Home() {
   return (
     <>
      
-      <Navbar />
+     
      
       <Drawer />
       
     
-      <Footer/>
+      
       <ScrollToTop
    style={{
     boxShadow: "none",
@@ -35,7 +35,7 @@ export default function Home() {
   }
    smooth
    top={500} />
-   <BotmNav/>
+   
     </>
   );
 }

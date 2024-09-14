@@ -1,0 +1,100 @@
+.group {
+    display: flex;
+    line-height: 30px;
+    align-items: center;
+    position: relative;
+   
+}
+
+.input {
+    /* width: 100%; */
+    height: 50px;
+    line-height: 40px;
+    padding: 0 5rem;
+    padding-left: 3rem;
+    border: 2px solid transparent;
+    border-radius: 10px;
+    outline: none;
+    background-color: rgba(184, 241, 108, 0.568);
+    color: #4a940ef3;
+    transition: 0.5s ease;
+    width: 100%;
+}
+
+.input::placeholder {
+    color: #0d3501;
+}
+
+.input:focus,
+input:hover {
+    outline: none;
+    border-color: #0230207c;
+    background-color: #fff;
+    box-shadow: 0 0 0 5px rgba(184, 241, 108, 0.568);
+}
+
+/* icon desigm */
+
+.icon {
+    position: absolute;
+    left: 1rem;
+    fill: none;
+    width: 1rem;
+    height: 1rem;
+}
+
+/* Button design  */
+/* button */
+.btnsign{
+    position: relative;
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    text-decoration: none;
+    overflow: hidden;
+    /* font-family: "Libre Baskerville", serif; */
+    font-weight: 800;
+    transition: 0.5s;
+    /* width: 180px; */
+    border-radius: 5px; /* margin-top: 40px; */
+    background-color: 0 0 0 5px rgba(184, 241, 108, 0.568);
+    color: white;
+    border-radius: 5px;
+   
+}
+
+.btnsign:hover {
+    background: 0 0 0 5px rgba(184, 241, 108, 0.568);
+    color: 0 0 0 5px rgba(184, 241, 108, 0.568);
+    border-radius: 5px;
+    box-shadow:
+    0 0 5px #61f06d6f,
+    0 0 5px #76f36b5a,
+    0 0 10px #5bec5658,
+    0 0 10px #74dd4b80;
+}
+
+.btnsign span {
+    position: absolute;
+    display: block;
+}
+
+@keyframes btn-anim1 {
+    0% {
+        left: -100%;
+    }
+
+    50%,
+    100% {
+        left: 100%;
+    }
+}
+
+.btnsign span:nth-child(1) {
+    bottom: 0px;
+    /* left: -100%; */
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, #023020);
+    animation: btn-anim1 2s linear infinite;
+}
