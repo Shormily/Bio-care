@@ -9,7 +9,15 @@ import { BsGithub } from 'react-icons/bs';
 import "./globals.css";
 
 const page = () => {
-    const handleLogin = async () => {};
+    const handleSign = async (event) => {
+        event.preventDefault();
+        const newUser = {
+            name: event.target.name.value,
+            email: event.target.email.value,
+            password: event.target.password.value,
+        };
+        console.log(newUser);
+    };
 
     return (
         <>
@@ -31,7 +39,7 @@ const page = () => {
                         </Link>
 
                         {/* Form Section */}
-                        <form onSubmit={handleLogin}>
+                        <form onSubmit={handleSign} action=''>
                             <div className="max-w-[600px] py-4 mx-auto">
                                 <div className="group pb-3 mx-5">
                                     <span className="icon pb-4">
@@ -41,6 +49,7 @@ const page = () => {
                                         className="input shadow-lg w-full"
                                         type="text"
                                         placeholder="Name"
+                                        name="name"
                                         required
                                     />
                                 </div>
@@ -53,6 +62,7 @@ const page = () => {
                                         className="input shadow-lg w-full"
                                         type="email"
                                         placeholder="Email"
+                                        name="email"
                                         required
                                     />
                                 </div>
@@ -65,6 +75,8 @@ const page = () => {
                                         className="input shadow-lg w-full"
                                         type="password"
                                         placeholder="Password"
+                                        name="password"
+
                                         required
                                     />
                                 </div>

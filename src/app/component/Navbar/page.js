@@ -1,4 +1,5 @@
 'use client';
+import { LuChevronDown } from "react-icons/lu";
 import React, { useState, useEffect, useRef } from 'react';
 import { IoSearch } from "react-icons/io5";
 import { LuShoppingCart } from "react-icons/lu";
@@ -137,7 +138,7 @@ const Navbar = () => {
               className=" flex gap-1 items-center"
               onClick={toggleUserMenu}
             >
-              <FaRegUser size={20} /> LogIn  
+              <FaRegUser size={20} /> LogIn  <LuChevronDown size={20} />
             </button>
            
             {/* Add your user menu dropdown here */}
