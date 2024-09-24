@@ -46,7 +46,7 @@ const page = () => {
                                         <FcReading size={25} />
                                     </span>
                                     <input
-                                        className="input shadow-lg w-full"
+                                        className="inputs shadow-lg w-full"
                                         type="text"
                                         placeholder="Name"
                                         name="name"
@@ -59,7 +59,7 @@ const page = () => {
                                         <FcFeedback size={20} />
                                     </span>
                                     <input
-                                        className="input shadow-lg w-full"
+                                        className="inputs shadow-lg w-full"
                                         type="email"
                                         placeholder="Email"
                                         name="email"
@@ -72,7 +72,7 @@ const page = () => {
                                         <FcDocument size={20} />
                                     </span>
                                     <input
-                                        className="input shadow-lg w-full"
+                                        className="inputs shadow-lg w-full"
                                         type="password"
                                         placeholder="Password"
                                         name="password"

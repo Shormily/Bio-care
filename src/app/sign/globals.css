@@ -4,9 +4,9 @@
     align-items: center;
     position: relative;
    
-}
-
-.input {
+  }
+  
+  .inputs {
     /* width: 100%; */
     height: 50px;
     line-height: 40px;
@@ -19,33 +19,33 @@
     /* color: #4a940ef3; */
     transition: 0.5s ease;
     width: 100%;
-}
-
-.input::placeholder {
+  }
+  
+  .inputs::placeholder {
     color: #0d3501;
-}
-
-.input:focus,
-input:hover {
+  }
+  
+  .inputs:focus,
+  inputs:hover {
     outline: none;
     border-color: #0230207c;
     background-color: #fff;
     box-shadow: 0 0 0 5px rgba(184, 241, 108, 0.568);
-}
-
-/* icon desigm */
-
-.icon {
+  }
+  
+  /* icon desigm */
+  
+  .icon {
     position: absolute;
     left: 1rem;
     fill: none;
     width: 1rem;
     height: 1rem;
-}
-
-/* Button design  */
-/* button */
-.btnsign{
+  }
+  
+  /* Button design  */
+  /* button */
+  .btnsign{
     position: relative;
     display: inline-block;
     padding: 10px 20px;
@@ -61,9 +61,9 @@ input:hover {
     color: white;
     border-radius: 5px;
    
-}
-
-.btnsign:hover {
+  }
+  
+  .btnsign:hover {
     background: 0 0 0 5px rgba(184, 241, 108, 0.568);
     color: 0 0 0 5px rgba(184, 241, 108, 0.568);
     border-radius: 5px;
@@ -72,29 +72,30 @@ input:hover {
     0 0 5px #76f36b5a,
     0 0 10px #5bec5658,
     0 0 10px #74dd4b80;
-}
-
-.btnsign span {
+  }
+  
+  .btnsign span {
     position: absolute;
     display: block;
-}
-
-@keyframes btn-anim1 {
+  }
+  
+  @keyframes btn-anim1 {
     0% {
         left: -100%;
     }
-
+  
     50%,
     100% {
         left: 100%;
     }
-}
-
-.btnsign span:nth-child(1) {
+  }
+  
+  .btnsign span:nth-child(1) {
     bottom: 0px;
     /* left: -100%; */
     width: 100%;
     height: 2px;
     background: linear-gradient(90deg, transparent, #023020);
     animation: btn-anim1 2s linear infinite;
-}
+  }
+  

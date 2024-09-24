@@ -9,6 +9,15 @@ import Image from 'next/image';
 import { IoStar } from 'react-icons/io5';
 import { TypeAnimation } from 'react-type-animation';
 import "./Box.css";
+import Reviews from '../Review/page';
+import { Nunito } from 'next/font/google';
+import { FcApproval } from "react-icons/fc";
+
+const nunito = Nunito({
+  weight: ['400', '600', '700'], // Choose weights you need
+  subsets: ['latin'],            // Include subsets (e.g., 'latin')
+});
+
 
 const Box = () => {
   const menuItems = [
@@ -33,7 +42,7 @@ const Box = () => {
       company: "CMO at Sivo",
       img: "/asset/img4.jpg",
       names: "Yeari",
-      des:"This is very good Web Service Website The Blood Clinic very helpful." 
+      des: "This is very good Web Service Website The Blood Clinic very helpful."
     },
 
     {
@@ -44,7 +53,7 @@ const Box = () => {
       name: "Denie Ronal",
       img1: "/asset/jk.jpg",
       names: "Soroji",
-      des:"knowledge and determination our website looks great and functions  good is very good Web Service Website The Blood Clinic very helpful." 
+      des: "knowledge and determination our website looks great and functions  good is very good Web Service Website The Blood Clinic very helpful."
     },
     {
       id: "2",
@@ -54,7 +63,7 @@ const Box = () => {
       name: "Keya Estbin",
       img1: "/asset/img44.jpg",
       names: "Dilara",
-      des:"The Web Surgery - amazing job for our Website The Blood Clinic very helpful and always willing to accommodate us with our queries." 
+      des: "The Web Surgery - amazing job for our Website The Blood Clinic very helpful and always willing to accommodate us with our queries."
     },
     {
       id: "4",
@@ -64,7 +73,7 @@ const Box = () => {
       name: "Sastika ",
       img1: "/asset/img43.jpg",
       names: "Yeariyan",
-      des:"BioCare is one of the most amazing people he will help you with everything you need he is so friendly and I recommend everyone to work with him.."
+      des: "BioCare is one of the most amazing people he will help you with everything you need he is so friendly and I recommend everyone to work with him.."
     },
     {
       id: "5",
@@ -74,7 +83,7 @@ const Box = () => {
       company: "Owner",
       img1: "/asset/img5.jpg",
       names: "Solujni",
-      des:"Excellent, working with web designer express was great.  Thanks to their knowledge and determination our website looks great and functions  good."
+      des: "Excellent, working with web designer express was great.  Thanks to their knowledge and determination our website looks great and functions  good."
     },
 
     {
@@ -85,7 +94,7 @@ const Box = () => {
       name: "Kavibi Salik",
       img1: "/asset/img41.jpg",
       names: "Fariyan",
-      des:"BioCare is one of the most amazing people he will help you with everything you need he is so friendly and I recommend everyone to work with him.."
+      des: "BioCare is one of the most amazing people he will help you with everything you need he is so friendly and I recommend everyone to work with him.."
     },
     {
       id: "7",
@@ -95,7 +104,7 @@ const Box = () => {
       name: "Astha moon",
       img1: "/asset/img7.jpg",
       names: "Somiya",
-      des:"knowledge and determination our website looks great and functions  good is very good Web Service Website The Blood Clinic very helpful."
+      des: "knowledge and determination our website looks great and functions  good is very good Web Service Website The Blood Clinic very helpful."
     },
     {
       id: "8",
@@ -105,7 +114,7 @@ const Box = () => {
       name: "Dwatis Bimuk",
       img1: "/asset/img5.jpg",
       names: "Somiya",
-      des:"This is very good Web Service Website The Blood Clinic very helpful.I will definitely be recommending him to other companies."
+      des: "This is very good Web Service Website The Blood Clinic very helpful.I will definitely be recommending him to other companies."
     },
     {
       id: "9",
@@ -114,8 +123,8 @@ const Box = () => {
       company: "Retired Police",
       name: "Caaki Daud",
       img1: "/asset/img6.jpg",
-       names: "Waichard",
-      des:"Excellent, working with web designer express was great.  Thanks to their knowledge and determination our website looks great and functions  good."
+      names: "Waichard",
+      des: "Excellent, working with web designer express was great.  Thanks to their knowledge and determination our website looks great and functions  good."
     },
     {
       id: "9",
@@ -124,8 +133,8 @@ const Box = () => {
       company: "Maneger",
       name: "Manobika Sen",
       img1: "/asset/img4.jpg",
-       names: "Tesread",
-      des:"This is very good Web Service Website The Blood Clinic very helpful.I will definitely be recommending him to other companies."
+      names: "Tesread",
+      des: "This is very good Web Service Website The Blood Clinic very helpful.I will definitely be recommending him to other companies."
     },
   ];
   const products = [
@@ -196,7 +205,7 @@ const Box = () => {
   ];
 
   return (
-    <>
+    <div className='px-3'>
       <div
         className='items-center justify-center m-auto py-2'
       >
@@ -245,45 +254,8 @@ const Box = () => {
         </div>
       </div>
 
-      <h1 className='text-2xl font-bold px-3 py-4 mt-5 '>Product Categories</h1>
-      <div className='px-3'>
-        <Swiper
-          navigation={true} modules={[Navigation, Autoplay]} autoplay={{
-            delay: 2500,
-            disableOnInteraction: false,
-          }} slidesPerView={6} spaceBetween={10} className="mySwiper"
-          breakpoints={{
-            640: { slidesPerView: 2 },
-            600: { slidesPerView: 2 },
-            580: { slidesPerView: 1 },
-            554: { slidesPerView: 2 },
-            500: { slidesPerView: 1 },
-            389: { slidesPerView: 1 },
-            320: { slidesPerView: 1 },
-            768: { slidesPerView: 4 },
-            1024: { slidesPerView: 6 },
-            1364: { slidesPerView: 6 },
-            1615: { slidesPerView: 5 },
-          }}
-        >
-          {menuItems.map((item, index) => (
-            <SwiperSlide key={index} className='justify-center items-center m-auto text-center'>
-              <div className="max-w-sm p-6 py-6  border shadow-lg border-gray-200 rounded-lg dark:bg-gray-800 dark:border-gray-700">
-                {/* Center the icon and label */}
-                <div className='flex flex-col items-center justify-center'>
-                  <Image className={`rounded-md mb-2`}
-                    src={item.icon}
-                    alt="error image"
-                    height={100}
-                    width={100}
-                  />
-                  <span className='text-[#000]'>{item.label}</span>
-                </div>
-              </div>
-            </SwiperSlide>
-          ))}
-        </Swiper>
-      </div>
+      
+
       <div className="justify-center items-center p-5    mt-2 rounded-lg">
         <div className="grid lg:grid-cols-2 md:grid-cols-1 sm:grid-cols-1 justify-center items-center m-auto px-2">
           <div
@@ -310,9 +282,9 @@ const Box = () => {
               <Image
                 src='/asset/dr.png'
                 width={400}
-                height={400}
+                height={300}
                 alt="error image"
-                className="mb-4 p-1 bg-white"
+                className="mb-4 w-full h-96 p-1 bg-white mt-12"
               />
               {/* <Image
                                 src='/asset/sa.jpg'
@@ -324,18 +296,25 @@ const Box = () => {
             </div>
           </div>
           <div className="flex flex-col gap-5 md:text-start xs:text-center px-4 ">
-            <div className="gap-6 font-bold bg-clip-text bg-gradient-to-r from-emerald-950 to-lime-500 w-auto h-auto">
-              <p className="text-transparent bg-clip-text py-4 bg-gradient-to-r from-emerald-950 to-lime-300">
-                <span className='text-5xl italic '>About US</span>
+            <div
+            // className="gap-6 font-bold bg-clip-text bg-gradient-to-r from-emerald-950 to-lime-500 w-auto h-auto"
+            >
+              <p
+                className='font-bold text-1xl text-transparent bg-gradient-to-r from-emerald-950 to-lime-300 bg-clip-text mb-4'
+              >
+                <span className={nunito.className}>
+                  About Us BioCare
+                </span>
               </p>
+              <p className={nunito.className}>
+                <span className='font-bold text-2xl  '>We Have Medicare Plan Options for You!</span>
 
-              <p className="text-transparent bg-clip-text bg-gradient-to-r from-emerald-950 to-lime-800">
-                <span className='text-[40px]  '>Dr. Shormily Raisa</span>
               </p>
-            </div>
-            <p className="text-white">
-              <span className="text-danger">
-                <TypeAnimation
+              <p className='text-[14px] text-gray-500 mt-3 text-justify'>At Bio Care , we are dedicated to enhancing lives through innovative healthcare solutions. Established in 2008, we have grown into a trusted name in the pharmaceutical and medical industries. Our mission is to provide accessible, high-quality healthcare products and services that empower individuals and communities to live healthier, happier lives.
+
+                Driven by a passion for science and well-being, Bio Care Medicine focuses on cutting-edge research, sustainable practices, and patient-centric care. Our products range from essential medicines and health supplements to advanced therapeutic solutions. Each product is meticulously developed with a commitment to safety, efficacy, and affordability.</p>
+
+                <p className='  text-[#000] text-gray-500 text-[14px] mt-2'>  <TypeAnimation
                   sequence={[
                     "> Hi, I am MBBS Doctor",
                     1000,
@@ -346,14 +325,65 @@ const Box = () => {
                   wrapper="span"
                   speed={50}
                   repeat={Infinity}
-                  className="font-semibold text-transparent herotext bg-clip-text bg-gradient-to-r from-emerald-950 to-lime-800"
-                />
-              </span>
+                  className="font-semibold text-transparent  bg-clip-text bg-gradient-to-r from-emerald-950 to-lime-800"
+                /></p>
+            </div>
+           
+            <p className="text-white">
+            
+              <span className='flex gap-3 text-[#000] text-gray-500 text-[14px] '> <FcApproval size={20} /> Prescription and Over-the-Counter Medications</span>
+              
+              <span className='flex gap-3 text-[#000] text-gray-500 text-[14px] mt-2'> <FcApproval size={20}  />Nutritional Supplements and Wellness Products</span>
+              <span className='flex gap-3 text-[#000] text-gray-500 text-[14px] mt-2'> <FcApproval size={20} />Specialized Treatments for Chronic Illnesses</span>
+              <span className='flex gap-3 text-[#000] text-gray-500 text-[14px] mt-2'> <FcApproval size={20}  />Global Pharmaceutical Partnerships and Distribution</span>
             </p>
           </div>
 
         </div>
       </div>
+      <h1 className='text-2xl font-bold px-3 py-4 mt-5 '>Product Categories</h1>
+      <div className='px-3'>
+        <Swiper
+          navigation={true} modules={[Navigation,]}
+          // autoplay={{
+          //   delay: 2500,
+          //   disableOnInteraction: false,
+          // }}
+
+          slidesPerView={6} spaceBetween={10} className="mySwiper"
+          breakpoints={{
+            640: { slidesPerView: 2 },
+            600: { slidesPerView: 2 },
+            580: { slidesPerView: 1 },
+            554: { slidesPerView: 2 },
+            500: { slidesPerView: 1 },
+            389: { slidesPerView: 1 },
+            320: { slidesPerView: 1 },
+            768: { slidesPerView: 4 },
+            1024: { slidesPerView: 6 },
+            1364: { slidesPerView: 6 },
+            1615: { slidesPerView: 5 },
+          }}
+        >
+          {menuItems.map((item, index) => (
+            <SwiperSlide key={index} className='justify-center items-center m-auto text-center'>
+              <div className="max-w-sm p-6 py-6  border shadow-lg border-gray-200 rounded-lg dark:bg-gray-800 dark:border-gray-700">
+
+                <div className='flex flex-col items-center justify-center'>
+                  <Image className={`rounded-md mb-2`}
+                    src={item.icon}
+                    alt="error image"
+                    height={100}
+                    width={100}
+                  />
+                  <span className='text-[#000]'>{item.label}</span>
+                </div>
+              </div>
+            </SwiperSlide>
+          ))}
+        </Swiper>
+      </div>
+      <Reviews />
       {/* Testimonial Part */}
       <h1 className='font-bold text-2xl '>Testemonial</h1>
       <Swiper
@@ -372,101 +402,57 @@ const Box = () => {
         {Skills?.map((Skill) => {
           return (
             <> <SwiperSlide>
-            <div className="testimonials bgc">
-              <div className="container mx-auto">
-                <div className="grid md:grid-cols-12 sm:grid-cols-6">
-                  <div className="col-span-5 col-start-2 p-5 border-l-4 border-green-800 mt-12 mb-12">
-                    <p className="text-dark mb-2">
-                    {Skill.pra}
+              <div className="testimonials bgc">
+                <div className="container mx-auto">
+                  <div className="grid md:grid-cols-12 sm:grid-cols-6">
+                    <div className="col-span-5 col-start-2 p-5 border-l-4 border-green-800 mt-12 mb-12">
+                      <p className="text-dark mb-2">
+                        {Skill.pra}
                       </p>
-                      
-                    <Image objectFit="cover" alt="error image" height={1500} width={1500} src={Skill.img} className="h-15 mb-3 w-15 rounded-full mx-2 " />
-                    <p className="user-details text-dark ">
+
+                      <Image objectFit="cover" alt="error image" height={1500} width={1500} src={Skill.img} className="h-15 mb-3 w-15 rounded-full mx-2 " />
+                      <p className="user-details text-dark ">
                         <b className='my-3'>{Skill.names}</b>
-                      <br />
-                      <span className="item-center justify-center flex text-yellow-400  pb-1">
-                  <IoStar size={25} />
-                  <IoStar size={25} />
-                  <IoStar size={25} />
-                  <IoStar size={25} />
-                  <IoStar size={25} />
-                </span>
-                    </p>
-                  </div>
-                  <div className="col-span-5  p-5 m-5 border-l-4 border-green-800 mt-12 mb-12">
-                    <p className="text-dark mb-2">
-                    {Skill.des}
-                    </p>
-                    <Image objectFit="cover" alt="error image" height={1500} width={1500} src={Skill.img1} className="h-15 mb-2  w-15 rounded-full mx-2" />
-                    <p className="user-details text-dark">
+                        <br />
+                        <span className="item-center justify-center flex text-yellow-400  pb-1">
+                          <IoStar size={25} />
+                          <IoStar size={25} />
+                          <IoStar size={25} />
+                          <IoStar size={25} />
+                          <IoStar size={25} />
+                        </span>
+                      </p>
+                    </div>
+                    <div className="col-span-5  p-5 m-5 border-l-4 border-green-800 mt-12 mb-12">
+                      <p className="text-dark mb-2">
+                        {Skill.des}
+                      </p>
+                      <Image objectFit="cover" alt="error image" height={1500} width={1500} src={Skill.img1} className="h-15 mb-2  w-15 rounded-full mx-2" />
+                      <p className="user-details text-dark">
                         <b >{Skill.name}</b>
-                      <br />
-                      <span className="item-center justify-center flex text-yellow-400  pb-1">
-                  <IoStar size={25} />
-                  <IoStar size={25} />
-                  <IoStar size={25} />
-                  <IoStar size={25} />
-                  <IoStar size={25} />
-                </span>
-                    </p>
+                        <br />
+                        <span className="item-center justify-center flex text-yellow-400  pb-1">
+                          <IoStar size={25} />
+                          <IoStar size={25} />
+                          <IoStar size={25} />
+                          <IoStar size={25} />
+                          <IoStar size={25} />
+                        </span>
+                      </p>
+                    </div>
                   </div>
                 </div>
               </div>
-            </div>
-  
-          </SwiperSlide></>
-       
-  );
-})}
-       
+
+            </SwiperSlide></>
+
+          );
+        })}
+
       </Swiper>
 
-      {/* Tastemonial end */}
-      {/* <div className='px-3'>
-        <Swiper
-          navigation={true} modules={[Navigation, Autoplay]} autoplay={{
-            delay: 2500,
-            disableOnInteraction: false,
-          }} slidesPerView={6} spaceBetween={10} className="mySwiper"
-          breakpoints={{
-            640: { slidesPerView: 2 },
-            600: { slidesPerView: 2 },
-            580: { slidesPerView: 1 },
-            554: { slidesPerView: 2 },
-            500: { slidesPerView: 1 },
-            389: { slidesPerView: 1 },
-            320: { slidesPerView: 1 },
-            768: { slidesPerView: 4 },
-            1024: { slidesPerView: 6 },
-            1364: { slidesPerView: 6 },
-            1615: { slidesPerView: 5 },
-          }}
-        >
-          {Skills?.map((Skill, index) => (
-            <SwiperSlide key={index} className='justify-center items-center m-auto text-center'>
-              <div class=" bg-white border text-base text-justify w-full border-gray-200 rounded-sm shadow sm:p-8 dark:bg-gray-800 dark:border-gray-700">
 
-
-                <p className="text-2xl herotext text-dark font-bold text-center pt-3">
-                  {Skill.name}
-                </p>
-                <p className="text-1xl herot text-dark font-bold text-blue-800 text-center py-3">
-                      {Skill.company}
-                    </p>
-                <p className="text-1xl text-dark herot font-semibold">{Skill.pra}</p>
-                <div className="item-center justify-center flex text-yellow-400 pt-4 pb-1">
-                  <IoStar size={25} />
-                  <IoStar size={25} />
-                  <IoStar size={25} />
-                  <IoStar size={25} />
-                  <IoStar size={25} />
-                </div>
-              </div>
-            </SwiperSlide>
-          ))}
-        </Swiper>
-      </div> */}
-    </>
+    </div>
   );
 };
 

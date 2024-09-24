@@ -6,7 +6,7 @@
    
 }
 
-.input {
+.inputs {
     /* width: 100%; */
     height: 50px;
     line-height: 40px;
@@ -21,12 +21,12 @@
     width: 100%;
 }
 
-.input::placeholder {
+.inputs::placeholder {
     color: #0d3501;
 }
 
-.input:focus,
-input:hover {
+.inputs:focus,
+inputs:hover {
     outline: none;
     border-color: #0230207c;
     background-color: #fff;

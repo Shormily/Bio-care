@@ -1,10 +1,18 @@
 
 import { Inter } from "next/font/google";
 import "./globals.css";
+// import Navbar from "./component/Navbar/page";
+// import Footer from "./component/Navbar/Footer/Footer";
+// import BottomNav from "./component/Navbar//Side/BotmNav/BotmNav";
+// import AuthProvider from "./services/AuthProvider";
+// import Navbar from "@/component/Navbar/page";
+// import Footer from "@/component/Navbar/Footer/Footer";
+// import BottomNav from "@/component/Navbar/Side/BotmNav/BotmNav";
+// import AuthProvider from "@/services/AuthProvider";
 import Navbar from "./component/Navbar/page";
+import AuthProvider from "@/services/AuthProvider";
 import Footer from "./component/Navbar/Footer/Footer";
-import BottomNav from "./component/Navbar//Side/BotmNav/BotmNav";
-import AuthProvider from "./services/AuthProvider";
+import BottomNav from "./component/Navbar/Side/BotmNav/BotmNav";
 
 
 const inter = Inter({ subsets: ["latin"] });

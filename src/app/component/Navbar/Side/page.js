@@ -145,17 +145,17 @@ export default function Drawer() {
     <div className="flex-container mt-4 space-x-2  mx-6
     ">
     {/* Sidebar */}
-    <div className="lg:w-[21%] hidden lg:block">
-      <div className="bg-[#f0fdf4] p-2 overflow-auto scroll-y-auto rounded-lg h-screen">
+    <div className="lg:w-[21%] hidden lg:block ">
+      <div className="bg-[#f0fdf4]  sticky top-0 p-2 overflow-auto scroll-y-auto rounded-lg h-screen">
         <Swiper
           slidesPerView={"auto"}
           freeMode={true}
           scrollbar={true}
           mousewheel={true}
-          className="h-screen mx-4"
+          className="h-screen mx-4 sticky top-0"
         >
           <SwiperSlide>
-            <nav className="flex flex-col gap-4 space-y-2 mt-4">
+            <nav className="flex  flex-col gap-4 space-y-2 mt-4">
               {menuItems.map((item, index) => (
                 <Link href={item.href} key={index} legacyBehavior>
                   <a
