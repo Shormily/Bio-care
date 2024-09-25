@@ -19,7 +19,7 @@ export default function Custom404() {
         404
       </motion.h1>
       <motion.p className="text-xl mt-4" initial={{ y: 20 }} animate={{ y: 0 }} transition={{ delay: 0.3 }}>
-        Oops! The page you're looking for  exist.
+      <p>It&apos;s not found!</p>
       </motion.p>
       <Link href="/">
         <p className="mt-6 px-4 py-2 bg-blue-600 text-white rounded-md">
