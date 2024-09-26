@@ -87,7 +87,7 @@ const Navbar = () => {
 
     const typingInterval = setInterval(handleTyping, speed);
     return () => clearInterval(typingInterval);
-  }, [placeholder, isDeleting, speed, index]);
+  }, [ isDeleting, speed, index]);
 
   return (
     <div className='bg-[#023020] sticky top-0 z-20'>
