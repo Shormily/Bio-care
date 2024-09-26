@@ -1,13 +1,13 @@
 'use client';
 import Image from 'next/image';
 import Link from 'next/link';
-import React, { useState } from 'react';
+// import React, { useState } from 'react';
 import { FcDocument, FcFeedback, FcGoogle, FcReading } from 'react-icons/fc';
 import ScrollToTop from 'react-scroll-to-top';
 import { MdKeyboardArrowUp } from 'react-icons/md';
 import { BsGithub } from 'react-icons/bs';
 import "./globals.css";
-import { useRouter } from 'next/navigation';
+// import { useRouter } from 'next/navigation';
 import { FiEye, FiEyeOff } from 'react-icons/fi';
 // import { useFormik } from 'formik';
 
