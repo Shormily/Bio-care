@@ -344,7 +344,7 @@ const Reviews = () => {
             <SlArrowLeft className="text-black text-lg" />
           </div>
 
-          <div className="custom-pagination gap-2 flex justify-center swiper-pagination-bullets" />
+          {/* <div className="custom-pagination gap-2 flex justify-center swiper-pagination-bullets" /> */}
 
           <div className="reviewNextRef flex items-center justify-center cursor-pointer">
             <SlArrowRight className="text-black text-lg" />

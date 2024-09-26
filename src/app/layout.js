@@ -13,9 +13,14 @@ import Navbar from "./component/Navbar/page";
 import AuthProvider from "@/services/AuthProvider";
 import Footer from "./component/Navbar/Footer/Footer";
 import BottomNav from "./component/Navbar/Side/BotmNav/BotmNav";
+import { Nunito } from 'next/font/google';
 
 
-const inter = Inter({ subsets: ["latin"] });
+
+const nunito = Nunito({
+  weight: ['400', '600', '700'], // Choose weights you need
+  subsets: ['latin'],            // Include subsets (e.g., 'latin')
+});
 
 export const metadata = {
   title: "BioCare",
@@ -24,9 +29,9 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
+    <html lang="en" className="">
       
-      <body className={inter.className}>
+      <body className={nunito.className}>
       <AuthProvider>
         <Navbar />
         {children}

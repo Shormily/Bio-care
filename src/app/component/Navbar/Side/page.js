@@ -146,7 +146,8 @@ export default function Drawer() {
     ">
     {/* Sidebar */}
     <div className="lg:w-[21%] hidden lg:block ">
-      <div className="bg-[#f0fdf4]  sticky top-0 p-2 overflow-auto scroll-y-auto rounded-lg h-screen">
+        <div className="bg-[#f0fdf4]  sticky top-0 p-2 overflow-auto scroll-y-auto rounded-lg h-screen">
+         
         <Swiper
           slidesPerView={"auto"}
           freeMode={true}
