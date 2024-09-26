@@ -1,14 +1,13 @@
-"use-client";
+"use client"; // Ensure this is at the top for client-side rendering
 import React from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/navigation';
-import "swiper/css/pagination";
+import 'swiper/css/pagination';
 import { Navigation, Pagination, Autoplay } from 'swiper/modules';
 import Image from 'next/image';
-import { SlArrowRight, SlArrowLeft } from "react-icons/sl";
-import { MdKeyboardArrowLeft,MdOutlineKeyboardArrowRight } from "react-icons/md";
-import "./product.css";
+import { MdKeyboardArrowLeft, MdOutlineKeyboardArrowRight } from "react-icons/md";
+import './product.css';
 
 const Product = () => {
     const menuItems = [
@@ -154,73 +153,59 @@ const Product = () => {
         }
     ]
 
-    return (
-        <>
-            <div className='px-3'>
-                <Swiper
-                    modules={[Navigation, Pagination, Autoplay]}
-                    // autoplay={{
-                    //   delay: 2500,
-                    //   disableOnInteraction: false,
-                    // }}
-
-                    slidesPerView={6} spaceBetween={10}
-                    pagination={{
-                        clickable: true,
-                        el: ".custom-pagination",
-                    }}
-                    loop={true}
-                    navigation={{
-                        prevEl: ".reviewPrevRef",
-                        nextEl: ".reviewNextRef",
-                    }}
-                    className="mySwiper"
-                    breakpoints={{
-                        640: { slidesPerView: 2 },
-                        600: { slidesPerView: 2 },
-                        580: { slidesPerView: 1 },
-                        554: { slidesPerView: 2 },
-                        500: { slidesPerView: 1 },
-                        389: { slidesPerView: 1 },
-                        320: { slidesPerView: 1 },
-                        768: { slidesPerView: 4 },
-                        1024: { slidesPerView: 6 },
-                        1364: { slidesPerView: 6 },
-                        1615: { slidesPerView: 5 },
-                    }}
-                >
-                    {menuItems.map((item, index) => (
-                        <SwiperSlide key={index} className='justify-center items-center m-auto text-center'>
-                            <div className="max-w-sm p-6 py-6  border shadow-lg border-gray-200 rounded-lg dark:bg-gray-800 dark:border-gray-700">
-
-                                <div className='flex flex-col items-center justify-center'>
-                                    <Image className="rounded-md mb-2 h-28  w-full"
-                                        src={item.image}
-                                        alt="error image"
-                                        height={100}
-                                        width={100}
-                                    />
-                                    <span className='text-[#000]'>{item.name}</span>
-                                    <p>{item.price}</p>
-                                </div>
-                            </div>
-                        </SwiperSlide>
-                    ))}
-                </Swiper>
-                <div className="flex justify-center items-center mt-6 gap-4">
-          <div className="reviewPrevRef flex items-center justify-center cursor-pointer">
-            <MdKeyboardArrowLeft size={30} className='text-green-800'  />
-          </div>
-
-          <div className="custom-pagination gap-2 flex justify-center font-bold swiper-pagination-bullets" />
-
-          <div className="reviewNextRef flex items-center  justify-center cursor-pointer">
-            <MdOutlineKeyboardArrowRight size={30} className='text-green-800' />
-          </div>
-        </div>
+  return (
+    <div className="px-3">
+      <Swiper
+        modules={[Navigation, Pagination, Autoplay]}
+        slidesPerView={6}
+        spaceBetween={10}
+        pagination={{
+          clickable: true,
+          el: ".custom-pagination",
+        }}
+        loop={true}
+        navigation={{
+          prevEl: ".reviewPrevRef",
+          nextEl: ".reviewNextRef",
+        }}
+        breakpoints={{
+          640: { slidesPerView: 2 },
+          768: { slidesPerView: 4 },
+          1024: { slidesPerView: 6 },
+        }}
+      >
+        {menuItems.map((item, index) => (
+          <SwiperSlide key={item.id} className="text-center">
+            <div className="max-w-sm p-6 py-6 border shadow-lg rounded-lg">
+              <div className="flex flex-col items-center">
+                <Image
+                  className="rounded-md mb-2"
+                  src={item.image}
+                  alt={item.name}
+                  height={100}
+                  width={100}
+                />
+                <span>{item.name}</span>
+                <p>{item.price}</p>
+              </div>
             </div>
-        </>
-    );
+          </SwiperSlide>
+        ))}
+      </Swiper>
+
+      <div className="flex justify-center items-center mt-6 gap-4">
+        <div className="reviewPrevRef cursor-pointer">
+          <MdKeyboardArrowLeft size={30} className="text-green-800" />
+        </div>
+
+        <div className="custom-pagination gap-2 flex justify-center swiper-pagination-bullets" />
+
+        <div className="reviewNextRef cursor-pointer">
+          <MdOutlineKeyboardArrowRight size={30} className="text-green-800" />
+        </div>
+      </div>
+    </div>
+  );
 };
 
 export default Product;
