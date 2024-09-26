@@ -7,7 +7,7 @@ import ScrollToTop from 'react-scroll-to-top';
 import { MdKeyboardArrowUp } from 'react-icons/md';
 import { BsGithub } from 'react-icons/bs';
 import "./globals.css";
-import { useRouter } from 'next/navigation';
+// import { useRouter } from 'next/navigation';
 import { FiEye, FiEyeOff } from 'react-icons/fi';
 import { useFormik } from 'formik';
 
@@ -20,12 +20,12 @@ const initialValues = {
 
 
 const page  = () => {
-    const router = useRouter();
+    // const router = useRouter();
  const {values, handleChange,errors, handleSubmit} =  useFormik({
         initialValues,
         onSubmit: async (values) => {
             console.log(values);
-            router.push('/')
+            // router.push('/')
         }
  })
  const [showPassword, setShowPassword] = useState(false); // State to track password visibility
