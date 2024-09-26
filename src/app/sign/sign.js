@@ -1,7 +1,7 @@
 'use client';
 import Image from 'next/image';
 import Link from 'next/link';
-// import React, { useState } from 'react';
+import React, { useState } from 'react';
 import { FcDocument, FcFeedback, FcGoogle, FcReading } from 'react-icons/fc';
 import ScrollToTop from 'react-scroll-to-top';
 import { MdKeyboardArrowUp } from 'react-icons/md';
@@ -19,7 +19,7 @@ import { FiEye, FiEyeOff } from 'react-icons/fi';
 // }
 
 
-const page = () => {
+const sign = () => {
     // const router = useRouter();
 //  const {values, handleChange,errors, handleSubmit} =  useFormik({
 //         initialValues,
@@ -169,4 +169,4 @@ const page = () => {
     );
 };
 
-export default page;
+export default sign;
