@@ -12,7 +12,7 @@ import "./Box.css";
 import Reviews from '../Review/page';
 import { Nunito } from 'next/font/google';
 import { FcApproval } from "react-icons/fc";
-// import Product from '../product/page';
+import Product from '../product/page';
 
 const nunito = Nunito({
   weight: ['400', '600', '700'], // Choose weights you need
@@ -343,7 +343,7 @@ const Box = () => {
         </div>
       </div>
       <h1 className='text-2xl font-bold px-3 py-4 mt-5 text-green-800'>Our Product </h1>
-      {/* <Product/> */}
+      <Product/>
       <h1 className='text-2xl font-bold px-3 py-4 mt-5 '>Product Categories</h1>
       <div className='px-3'>
         <Swiper

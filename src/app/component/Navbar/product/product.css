@@ -1,0 +1,13 @@
+.swiper-pagination-bullets {
+    width: auto !important;
+    display: inline-flex;
+    justify-content: center;
+}
+
+.swiper-pagination-bullet {
+    background-color: rgb(9, 81, 2);
+}
+
+.swiper-pagination-bullet-active {
+    background-color: rgb(2, 74, 2);
+}
