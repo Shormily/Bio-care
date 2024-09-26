@@ -169,21 +169,29 @@ const Product = () => {
           nextEl: ".reviewNextRef",
         }}
         breakpoints={{
-          640: { slidesPerView: 2 },
-          768: { slidesPerView: 4 },
-          1024: { slidesPerView: 6 },
-        }}
+            640: { slidesPerView: 2 },
+            600: { slidesPerView: 2 },
+            580: { slidesPerView: 1 },
+            554: { slidesPerView: 2 },
+            500: { slidesPerView: 1 },
+            389: { slidesPerView: 1 },
+            320: { slidesPerView: 1 },
+            768: { slidesPerView: 4 },
+            1024: { slidesPerView: 6 },
+            1364: { slidesPerView: 6 },
+            1615: { slidesPerView: 5 },
+          }}
       >
         {menuItems.map((item, index) => (
           <SwiperSlide key={item.id} className="text-center">
             <div className="max-w-sm p-6 py-6 border shadow-lg rounded-lg">
               <div className="flex flex-col items-center">
                 <Image
-                  className="rounded-md mb-2"
+                  className="rounded-md mb-2 w-full h-28 "
                   src={item.image}
                   alt={item.name}
-                  height={100}
-                  width={100}
+                  height={1500}
+                  width={1500}
                 />
                 <span>{item.name}</span>
                 <p>{item.price}</p>
