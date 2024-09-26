@@ -6,32 +6,31 @@ import { FcDocument, FcFeedback, FcGoogle, FcReading } from 'react-icons/fc';
 import ScrollToTop from 'react-scroll-to-top';
 import { MdKeyboardArrowUp } from 'react-icons/md';
 import { BsGithub } from 'react-icons/bs';
-import "./globals.css";
 import { useRouter } from 'next/navigation';
 import { FiEye, FiEyeOff } from 'react-icons/fi';
 import { useFormik } from 'formik';
+import "./globals.css";
 
 const initialValues = {
     name: "",
     email: "",
     password: "",
-    
 }
 
-
-const page = () => {
+const Page = () => { // Renamed from page to Page
     const router = useRouter();
- const {values, handleChange,errors, handleSubmit} =  useFormik({
+    const { values, handleChange, errors, handleSubmit } = useFormik({
         initialValues,
         onSubmit: async (values) => {
             console.log(values);
-            router.push('/')
-        }
- })
- const [showPassword, setShowPassword] = useState(false); // State to track password visibility
+            router.push('/');
+        },
+    });
 
- const handleClickShowPassword = () => setShowPassword(!showPassword); // Toggle password visibility
- const handleMouseDownPassword = (event) => event.preventDefault(); // Prevent focus loss when clicking
+    const [showPassword, setShowPassword] = useState(false);
+
+    const handleClickShowPassword = () => setShowPassword(!showPassword);
+    const handleMouseDownPassword = (event) => event.preventDefault();
 
     return (
         <>
@@ -53,7 +52,7 @@ const page = () => {
                         </Link>
 
                         {/* Form Section */}
-                        <form onSubmit={handleSubmit} action=''>
+                        <form onSubmit={handleSubmit}>
                             <div className="max-w-[600px] py-4 mx-auto">
                                 <div className="group pb-3 mx-5">
                                     <span className="icon pb-4">
@@ -91,8 +90,8 @@ const page = () => {
                                     </span>
                                     <input
                                         className="inputs shadow-lg w-full pr-10"
-                                        type={showPassword ? 'text' : 'password'} // Toggle between text and password
-                                       id='password'
+                                        type={showPassword ? 'text' : 'password'}
+                                        id='password'
                                         placeholder="Enter your password"
                                         value={values.password}
                                         onChange={handleChange}
@@ -169,4 +168,4 @@ const page = () => {
     );
 };
 
-export default page;
+export default Page;
