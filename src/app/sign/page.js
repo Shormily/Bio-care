@@ -9,25 +9,25 @@ import { BsGithub } from 'react-icons/bs';
 import "./globals.css";
 // import { useRouter } from 'next/navigation';
 import { FiEye, FiEyeOff } from 'react-icons/fi';
-import { useFormik } from 'formik';
+// import { useFormik } from 'formik';
 
-const initialValues = {
-    name: "",
-    email: "",
-    password: "",
+// const initialValues = {
+//     name: "",
+//     email: "",
+//     password: "",
     
-}
+// }
 
 
 const page  = () => {
     // const router = useRouter();
- const {values, handleChange,errors, handleSubmit} =  useFormik({
-        initialValues,
-        onSubmit: async (values) => {
-            console.log(values);
-            // router.push('/')
-        }
- })
+//  const {values, handleChange,errors, handleSubmit} =  useFormik({
+//         initialValues,
+//         onSubmit: async (values) => {
+//             console.log(values);
+//             // router.push('/')
+//         }
+//  })
  const [showPassword, setShowPassword] = useState(false); // State to track password visibility
 
  const handleClickShowPassword = () => setShowPassword(!showPassword); // Toggle password visibility
@@ -53,7 +53,10 @@ const page  = () => {
                         </Link>
 
                         {/* Form Section */}
-                        <form onSubmit={handleSubmit} action=''>
+                        <form
+                            // onSubmit={handleSubmit}
+                            
+                            action=''>
                             <div className="max-w-[600px] py-4 mx-auto">
                                 <div className="group pb-3 mx-5">
                                     <span className="icon pb-4">
@@ -63,8 +66,8 @@ const page  = () => {
                                         className="inputs shadow-lg w-full"
                                         type="text"
                                         placeholder="Name"
-                                        value={values.name}
-                                        onChange={handleChange}
+                                        // value={values.name}
+                                        // onChange={handleChange}
                                         name="name"
                                         required
                                     />
@@ -78,8 +81,8 @@ const page  = () => {
                                         className="inputs shadow-lg w-full"
                                         type="email"
                                         placeholder="Email"
-                                        value={values.email}
-                                        onChange={handleChange}
+                                        // value={values.email}
+                                        // onChange={handleChange}
                                         name="email"
                                         required
                                     />
@@ -94,8 +97,8 @@ const page  = () => {
                                         type={showPassword ? 'text' : 'password'} // Toggle between text and password
                                        id='password'
                                         placeholder="Enter your password"
-                                        value={values.password}
-                                        onChange={handleChange}
+                                        // value={values.password}
+                                        // onChange={handleChange}
                                         required
                                     />
                                     <div className="absolute inset-y-0 right-0 pr-3 flex items-center text-sm leading-5">
