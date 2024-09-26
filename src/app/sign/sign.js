@@ -19,7 +19,7 @@ import { FiEye, FiEyeOff } from 'react-icons/fi';
 // }
 
 
-const sign = () => {
+const Sign = () => {
     // const router = useRouter();
 //  const {values, handleChange,errors, handleSubmit} =  useFormik({
 //         initialValues,
@@ -169,4 +169,4 @@ const sign = () => {
     );
 };
 
-export default sign;
+export default Sign;
