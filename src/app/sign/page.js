@@ -7,27 +7,27 @@ import ScrollToTop from 'react-scroll-to-top';
 import { MdKeyboardArrowUp } from 'react-icons/md';
 import { BsGithub } from 'react-icons/bs';
 import "./globals.css";
-// import { useRouter } from 'next/navigation';
+import { useRouter } from 'next/navigation';
 // import { FiEye, FiEyeOff } from 'react-icons/fi';
-// import { useFormik } from 'formik';
+import { useFormik } from 'formik';
 
-// const initialValues = {
-//     name: "",
-//     email: "",
-//     password: "",
+const initialValues = {
+    name: "",
+    email: "",
+    password: "",
     
-// }
+}
 
 
 const page  = () => {
-    // const router = useRouter();
-//  const {values, handleChange,errors, handleSubmit} =  useFormik({
-//         initialValues,
-//         onSubmit: async (values) => {
-//             console.log(values);
-//             // router.push('/')
-//         }
-//  })
+    const router = useRouter();
+ const {values, handleChange,errors, handleSubmit} =  useFormik({
+        initialValues,
+        onSubmit: async (values) => {
+            console.log(values);
+            router.push('/')
+        }
+ })
     // const [showPassword, setShowPassword] = useState(false);
     // State to track password visibility
 
@@ -57,7 +57,7 @@ const page  = () => {
 
                         {/* Form Section */}
                         <form
-                            // onSubmit={handleSubmit}
+                            onSubmit={handleSubmit}
                             
                             action=''>
                             <div className="max-w-[600px] py-4 mx-auto">
@@ -69,8 +69,8 @@ const page  = () => {
                                         className="inputs shadow-lg w-full"
                                         type="text"
                                         placeholder="Name"
-                                        // value={values.name}
-                                        // onChange={handleChange}
+                                        value={values.name}
+                                        onChange={handleChange}
                                         name="name"
                                         required
                                     />
@@ -99,8 +99,8 @@ const page  = () => {
                                         className="inputs shadow-lg w-full"
                                         type="password"
                                         placeholder="password"
-                                        // value={values.email}
-                                        // onChange={handleChange}
+                                        value={values.email}
+                                        onChange={handleChange}
                                         name="email"
                                         required
                                     />
