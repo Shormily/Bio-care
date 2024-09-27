@@ -7,6 +7,7 @@ import 'swiper/css/pagination';
 import { Navigation, Pagination, Autoplay } from 'swiper/modules';
 import Image from 'next/image';
 import { MdKeyboardArrowLeft, MdOutlineKeyboardArrowRight } from "react-icons/md";
+import { RiArrowRightDoubleLine } from "react-icons/ri";
 import './product.css';
 
 const Product = () => {
@@ -195,6 +196,10 @@ const Product = () => {
                 />
                 <span>{item.name}</span>
                 <p>{item.price}</p>
+                <div className=' mt-5 flex flex-wrap gap-1  '><button type='submit' className='bg-[#023020] py-[1px]   hover:bg-green-800 flex rounded-sm text-white pl-2 pr-1'>Buy Now <RiArrowRightDoubleLine className='font-medium mt-[3px]'  size={20}/> </button>
+                <button type='submit' className='bg-[#023020] py-[1px]   hover:bg-green-800 flex rounded-sm text-white pl-2 pr-1'>Add to card <RiArrowRightDoubleLine className='font-medium mt-[3px]'  size={20}/></button>
+                </div>
+                
               </div>
             </div>
           </SwiperSlide>

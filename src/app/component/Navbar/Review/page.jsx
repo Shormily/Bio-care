@@ -314,12 +314,12 @@ const Reviews = () => {
             nextEl: ".reviewNextRef",
           }}
           modules={[Navigation, Pagination, Autoplay]}
-          className="mySwiper "
+          className="mySwiper  mb-6"
         >
           {reviews.map((review) => (
             <SwiperSlide
               key={review.id}
-              className="flex flex-col items-center border rounded-lg shadow-lg p-2 text-center "
+              className="flex flex-col items-center border rounded-lg shadow-lg p-2 text-center mb-3"
             >
               <Image
                 src={review.img}
