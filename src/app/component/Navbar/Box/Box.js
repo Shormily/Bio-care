@@ -342,9 +342,13 @@ const Box = () => {
 
         </div>
       </div>
-      <h1 className='text-2xl font-bold px-3 py-4 mt-5 text-green-800'>Our Product </h1>
+      <div className='grid grid-cols-2'>
+      <h1 className='text-3xl font-bold px-3 py-4 mt-5 text-green-800 '> Our Product</h1>  
+      <h1 className='  px-3 py-4 mt-6 font-semibold underline hover:no-underline hover:text-orange-800 text-blue-800 justify-end flex'>See all Product</h1>
+      
+      </div>
       <Product/>
-      <h1 className='text-2xl font-bold px-3 py-4 mt-5 '>Product Categories</h1>
+      <h1 className='text-3xl font-bold px-3 py-4 mt-5 '>Product Categories</h1>
       <div className='px-3'>
         <Swiper
           navigation={true} modules={[Navigation,]}

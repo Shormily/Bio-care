@@ -98,12 +98,12 @@ export default function Drawer() {
       label: "Devices",
       className: "text-blue-600 ",
     },
-    {
-      href: "/messages",
-      icon: <FaPrescriptionBottleAlt />,
-      label: "Prescription Medicine",
-      className: "text-red-600",
-    },
+    // {
+    //   href: "/messages",
+    //   icon: <FaPrescriptionBottleAlt />,
+    //   label: "Prescription Medicine",
+    //   className: "text-red-600",
+    // },
   ];
   const products = [
     {
@@ -146,7 +146,7 @@ export default function Drawer() {
     ">
     {/* Sidebar */}
     <div className="lg:w-[21%] hidden lg:block ">
-        <div className="bg-[#f0fdf4]  sticky top-0 p-2 overflow-auto scroll-y-auto rounded-lg h-screen">
+        <div className="bg-[#f0fdf4]  p-2 overflow-auto scroll-y-auto rounded-lg h-screen">
          
         <Swiper
           slidesPerView={"auto"}

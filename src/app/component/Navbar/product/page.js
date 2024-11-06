@@ -154,8 +154,10 @@ const Product = () => {
         }
     ]
 
+   
   return (
-    <div className="px-3">
+    <>
+      <div className="px-3">
       <Swiper
         modules={[Navigation, Pagination, Autoplay]}
         slidesPerView={6}
@@ -178,9 +180,9 @@ const Product = () => {
             389: { slidesPerView: 1 },
             320: { slidesPerView: 1 },
             768: { slidesPerView: 4 },
-            1024: { slidesPerView: 6 },
-            1364: { slidesPerView: 6 },
-            1615: { slidesPerView: 5 },
+            1024: { slidesPerView: 4 },
+            1364: { slidesPerView: 4 },
+            1615: { slidesPerView: 4 },
           }}
       >
         {menuItems.map((item, index) => (
@@ -217,7 +219,10 @@ const Product = () => {
           <MdOutlineKeyboardArrowRight size={30} className="text-green-800" />
         </div>
       </div>
-    </div>
+      </div>
+     
+    </>
+    
   );
 };
 

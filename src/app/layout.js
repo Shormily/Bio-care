@@ -13,11 +13,11 @@ import Navbar from "./component/Navbar/page";
 import AuthProvider from "@/services/AuthProvider";
 import Footer from "./component/Navbar/Footer/Footer";
 import BottomNav from "./component/Navbar/Side/BotmNav/BotmNav";
-import { Nunito } from 'next/font/google';
+import { Roboto_Slab } from '@next/font/google';
 
 
 
-const nunito = Nunito({
+const playwriteDEGrund = Roboto_Slab({
   weight: ['400', '600', '700'], // Choose weights you need
   subsets: ['latin'],            // Include subsets (e.g., 'latin')
 });
@@ -31,7 +31,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en" className="">
       
-      <body className={nunito.className}>
+      <body className={playwriteDEGrund.className}>
       <AuthProvider>
         <Navbar />
         {children}
