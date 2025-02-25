@@ -1,20 +1,19 @@
 "use client"
 import Image from "next/image";
-
-
-
 import ScrollToTop from "react-scroll-to-top";
 import { MdKeyboardArrowUp } from "react-icons/md";
 import Drawer from "./component/Navbar/Side/page";
+// import Allsection from "./component/Navbar/allsection";
 // import Drawer from "@/component/Navbar/Side/page";
 
 export default function Home() {
   return (
-    <>
+    <div className="m-auto max-w-[1800px]">
       <Drawer />
-     
+      
+     {/* <Allsection/> */}
       <ScrollToTop
-   style={{
+      style={{
     boxShadow: "none",
     backgroundColor: "#023020",
     borderRadius: "50%",
@@ -30,8 +29,8 @@ export default function Home() {
     />
   }
    smooth
-   top={500} />
+      top={500} />
    
-    </>
+    </div>
   );
 }

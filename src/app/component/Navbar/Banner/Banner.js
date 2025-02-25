@@ -1,16 +1,13 @@
 import Image from "next/image";
-import Box from "../Box/Box";
 import { TypeAnimation } from "react-type-animation";
 
-const Banner = () => {
-  
-  
 
+const Banner = () => {
 
   return (
     <div className="">
     
-    <Box/>
+    
     
       <div className="px-4 mt-8 pb-16">
         <h1 className="text-2xl font-semibold">

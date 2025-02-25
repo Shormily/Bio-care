@@ -34,6 +34,8 @@ import 'swiper/css/effect-fade';
 // import required modules
 import { Autoplay, Pagination,EffectFade, } from "swiper/modules";
 import Image from "next/image";
+import Allsection from "../allsection";
+import Box from "../Box/Box";
 // swiper end
 
 export default function Drawer() {
@@ -50,12 +52,133 @@ export default function Drawer() {
       label: "Women Choice",
       className: "text-pink-600",
     },
+    // {
+    //   href: "/settings",
+    //   icon: <FaHeartbeat />,
+    //   label: "Sexual Wellness",
+    //   className: "text-red-600",
+    // },
     {
-      href: "/settings",
-      icon: <FaHeartbeat />,
-      label: "Sexual Wellness",
-      className: "text-red-600",
+      href: "/messages",
+      icon: <FaSyringe />,
+      label: "Diabetic Care",
+      className: "text-green-600",
     },
+    {
+      href: "/messages",
+      icon: <FaBaby />,
+      label: "Baby Care",
+      className: "text-yellow-600",
+    },
+    {
+      href: "/messages",
+      icon: <FaTooth />,
+      label: "Dental Care",
+      className: "text-blue-600",
+    },
+    {
+      href: "/messages",
+      icon: <FaVial />,
+      label: "Supplement",
+      className: "text-purple-600",
+    },
+    {
+      href: "/messages",
+      icon: <FaBacon />,
+      label: "Diapers",
+      className: "text-teal-600",
+    },
+    {
+      href: "/messages",
+      icon: <FaHandsWash />,
+      label: "Personal Care",
+      className: "text-orange-600",
+    },
+    {
+      href: "/messages",
+      icon: <FaLaptopMedical />,
+      label: "Devices",
+      className: "text-blue-600 ",
+    },
+    // {
+    //   href: "/messages",
+    //   icon: <FaPrescriptionBottleAlt />,
+    //   label: "Prescription Medicine",
+    //   className: "text-red-600",
+    // },
+    {
+      href: "/",
+      icon: <FaCapsules />,
+      label: "OTC Medicine",
+      className: "text-blue-600 ml-2 ",
+    },
+    {
+      href: "/friends",
+      icon: <FaFemale />,
+      label: "Women Choice",
+      className: "text-pink-600",
+    },
+    // {
+    //   href: "/settings",
+    //   icon: <FaHeartbeat />,
+    //   label: "Sexual Wellness",
+    //   className: "text-red-600",
+    // },
+    {
+      href: "/messages",
+      icon: <FaSyringe />,
+      label: "Diabetic Care",
+      className: "text-green-600",
+    },
+    {
+      href: "/messages",
+      icon: <FaBaby />,
+      label: "Baby Care",
+      className: "text-yellow-600",
+    },
+    {
+      href: "/messages",
+      icon: <FaTooth />,
+      label: "Dental Care",
+      className: "text-blue-600",
+    },
+    {
+      href: "/messages",
+      icon: <FaVial />,
+      label: "Supplement",
+      className: "text-purple-600",
+    },
+    {
+      href: "/messages",
+      icon: <FaBacon />,
+      label: "Diapers",
+      className: "text-teal-600",
+    },
+    {
+      href: "/messages",
+      icon: <FaHandsWash />,
+      label: "Personal Care",
+      className: "text-orange-600",
+    },
+    {
+      href: "/messages",
+      icon: <FaLaptopMedical />,
+      label: "Devices",
+      className: "text-blue-600 ",
+    },
+    // {
+    //   href: "/messages",
+    //   icon: <FaPrescriptionBottleAlt />,
+    //   label: "Prescription Medicine",
+    //   className: "text-red-600",
+    // },
+  
+    // {
+    //   href: "/settings",
+    //   icon: <FaHeartbeat />,
+    //   label: "Sexual Wellness",
+    //   className: "text-red-600",
+    // },
     {
       href: "/messages",
       icon: <FaSyringe />,
@@ -141,19 +264,19 @@ export default function Drawer() {
   ];
 
   return (
-   
-    <div className="flex-container mt-4 space-x-2  mx-6
+   <>
+     <div className="flex-container mt-4 space-x-2 mx-4 
     ">
     {/* Sidebar */}
-    <div className="lg:w-[21%] hidden lg:block ">
-        <div className="bg-[#f0fdf4]  p-2 overflow-auto scroll-y-auto rounded-lg h-screen">
+    <div className="lg:w-[21%] hidden lg:block gap-4 ">
+        <div className="bg-[#f0fdf4] mb-5  p-2 overflow-auto scroll-y-auto rounded-lg h-screen">
          
         <Swiper
           slidesPerView={"auto"}
           freeMode={true}
           scrollbar={true}
           mousewheel={true}
-          className="h-screen mx-4 sticky top-0"
+          className="mx-4 sticky top-0 "
         >
           <SwiperSlide>
             <nav className="flex  flex-col gap-4 space-y-2 mt-4">
@@ -177,7 +300,8 @@ export default function Drawer() {
             </nav>
           </SwiperSlide>
         </Swiper>
-      </div>
+          </div>
+          
     </div>
 
     {/* Main Content */}
@@ -221,25 +345,17 @@ export default function Drawer() {
             />
           </div>
         </SwiperSlide>
-
-        <SwiperSlide>
-          <div className="rounded-2xl w-full">
-            <Image
-              src="/asset/t.png"
-              objectFit="cover"
-              alt="error image"
-              height={1500}
-              width={1500}
-              className="w-full xs:h-auto md:h-[520px]"
-            />
-          </div>
-        </SwiperSlide>
       </Swiper>
-      {/* swiper end */}
-
-      <Banner />
+        {/* swiper end */}
+       
+        <Box/>
+<Allsection/>
+      <Banner/>
     </div>
-  </div>
+      </div>
+     
+   </>
+  
   
 
   );

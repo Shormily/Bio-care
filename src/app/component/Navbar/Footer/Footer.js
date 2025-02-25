@@ -26,6 +26,7 @@ const Footer = () => {
                 alt=""
               />
                 <p className=" text-4xl font-bold mt-3 ">BioCare</p></div>
+                <hr className="mt-4 p-2 " />
               <hr className="mt-4 p-2" />
               <p className="py-2 text-[16px] font-light text-gray-200 ">
                 Experience the joy of endless possibilities – one click at a

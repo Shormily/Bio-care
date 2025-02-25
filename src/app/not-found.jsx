@@ -2,13 +2,15 @@
 'use client';
 import Link from 'next/link';
 import { motion } from 'framer-motion';
+import Image from 'next/image';
 
 export default function Custom404() {
   return (
-    <motion.div
+    <div className='flex flex-col items-center justify-center min-h-screen  bg-[#FFFBEB]'>
+  <motion.div
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
-      className="flex flex-col items-center justify-center min-h-screen bg-gray-100"
+      className=""
     >
       <motion.h1
         initial={{ scale: 0.8 }}
@@ -16,7 +18,14 @@ export default function Custom404() {
         transition={{ duration: 0.5 }}
         className="text-6xl font-bold text-red-500"
       >
-        404
+        <Image
+                                 src='/asset/run.gif'
+                                 width={700}
+                                 height={700}
+                                 alt="Logo"
+                                 className="py-2 auto"
+                               />
+                  <h1 className='text-5xl text-red-900'> Error (404)</h1> 
       </motion.h1>
       <motion.p className="text-xl mt-4" initial={{ y: 20 }} animate={{ y: 0 }} transition={{ delay: 0.3 }}>
       <p>It&apos;s not found!</p>
@@ -27,6 +36,8 @@ export default function Custom404() {
         </p>
       </Link>
       </motion.div>
+    </div>
+  
      
   );
 }
